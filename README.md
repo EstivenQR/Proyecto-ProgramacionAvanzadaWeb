@@ -64,10 +64,10 @@
         eliminar) en varias entidades, el Unit of Work garantiza que estas operaciones se gestionen dentro de una única transacción. EF Core mantiene un seguimiento de los cambios en las entidades, y cuando 
         ejecutas SaveChanges(), se aseguran de que los cambios se persistan correctamente en la base de datos.
 
-     3. Vista (View)
+     2. Vista (View)
        - Patrón ViewModel: Es un patrón muy común en ASP.NET Core MVC. El ViewModel es una clase que contiene la información que se va a mostrar en la vista. A diferencia del modelo, que refleja la estructura          de la base de datos, el ViewModel 	está diseñado específicamente para la vista y puede incluir datos agregados o transformados. Esto mantiene las vistas desacopladas del modelo de datos y facilita la           adaptación de la interfaz.
          
-     4. Controlador (Controller)
+     3. Controlador (Controller)
         - Patrón Repository: Este patrón abstrae el acceso a los datos, proporcionando una capa intermedia entre el controlador y la fuente de datos (por ejemplo, una base de datos). Los 
         controladores interactúan con  el repositorio, que se encarga de las operaciones de lectura/escritura.
 
