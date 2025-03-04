@@ -13,12 +13,12 @@
     -ASP.NET CORE WEB API:
      
 	b. Libraries o paquetes de nuget ualizados.
-    -Microsoft.EntityFrameworkCore.SqlServer:Para manejar bases de datos SQL Server con Entity Framework Core.
-    -Microsoft.EntityFrameworkCore.Design: Permite generar código automáticamente para modelos de base de datos.
-    -Microsoft.EntityFrameworkCore.Tools: Se usa en la terminal para administrar migraciones y actualizar bases de datos.
-    -Microsoft.VisualStudio.Web.CodeGeneration.Design: Se emplea para agilizar el desarrollo con generación automática de archivos en proyectos MVC.
-    -Swashbuckle.AspNetCore: Genera una interfaz gráfica en /swagger para visualizar y probar la API
-    -Microsoft.AspNetCore.OpenApi: Facilita la generación de documentación automática basada en atributos de los controladores y modelos.
+    - Microsoft.EntityFrameworkCore.SqlServer:Para manejar bases de datos SQL Server con Entity Framework Core.
+    - Microsoft.EntityFrameworkCore.Design: Permite generar código automáticamente para modelos de base de datos.
+    - Microsoft.EntityFrameworkCore.Tools: Se usa en la terminal para administrar migraciones y actualizar bases de datos.
+    - Microsoft.VisualStudio.Web.CodeGeneration.Design: Se emplea para agilizar el desarrollo con generación automática de archivos en proyectos MVC.
+    - Swashbuckle.AspNetCore: Genera una interfaz gráfica en /swagger para visualizar y probar la API
+    - Microsoft.AspNetCore.OpenApi: Facilita la generación de documentación automática basada en atributos de los controladores y modelos.
      
 	c. Principios de SOLID y patrones de diseño utilizados
 
