@@ -23,7 +23,7 @@
 	c. Principios de SOLID y patrones de diseño utilizados
 
     1. Single Responsibility Principle (SRP)
-      Este principio establece que cada clase debe tener una única responsabilidad
+      - Este principio establece que cada clase debe tener una única responsabilidad
     
       Aplicación:
       - Controladores deben ser responsables de manejar la lógica de las solicitudes y responder con vistas o datos. No deben encargarse de la lógica de negocio compleja, la cual debe residir en otras partes          del sistema.
