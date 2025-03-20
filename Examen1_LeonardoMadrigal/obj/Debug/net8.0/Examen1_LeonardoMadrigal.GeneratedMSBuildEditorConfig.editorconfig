@@ -58,6 +58,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_Encabezado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbmNhYmV6YWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_PiePagina.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QaWVQYWdpbmEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -93,3 +101,7 @@ build_metadata.AdditionalFiles.CssScope =
 [D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f7ad5me6j1
+
+[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_LayoutPlantLib.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQbGFudExpYi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = b-5cplpqvkis

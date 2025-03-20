@@ -1306,3 +1306,4 @@ D:\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\re
 D:\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.pdb
 D:\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.genruntimeconfig.cache
 D:\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\ref\Examen1_LeonardoMadrigal.dll
+D:\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\scopedcss\Views\Shared\_LayoutPlantLib.cshtml.rz.scp.css

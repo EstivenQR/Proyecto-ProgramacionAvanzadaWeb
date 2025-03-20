@@ -1,0 +1,130 @@
+﻿<div class="top-content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="social-links">
+					<ul>
+						<li>
+							<a href="#"><i class="icon icon-facebook"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="icon icon-twitter"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="icon icon-youtube-play"></i></a>
+						</li>
+						<li>
+							<a href="#"><i class="icon icon-behance-square"></i></a>
+						</li>
+					</ul>
+				</div><!--social-links-->
+			</div>
+			<div class="col-md-6">
+				<div class="right-element">
+					<a href="#" class="user-account for-buy">
+						<i class="icon icon-user"></i><span>Account</span>
+					</a>
+					<a href="#" class="cart for-buy">
+						<i class="icon icon-clipboard"></i><span>
+							Cart:(0
+							$)
+						</span>
+					</a>
+
+					<div class="action-menu">
+
+						<div class="search-bar">
+							<a href="#" class="search-button search-toggle" data-selector="#header-wrap">
+								<i class="icon icon-search"></i>
+							</a>
+							<form role="search" method="get" class="search-box">
+								<input class="search-field text search-input" placeholder="Search"
+									   type="search">
+							</form>
+						</div>
+					</div>
+
+				</div><!--top-right-->
+			</div>
+
+		</div>
+	</div>
+</div><!--top-content-->
+<header id="header">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-2">
+				<div class="main-logo">
+					<!--Se cambia la direccion para que haga la ruta que corresponde en este codigo-->
+					<a asp-action="Index" asp-controller="Home">
+						<img src="~/PlantLib/images/main-logo.png" alt="logo">
+					</a>
+				</div>
+
+			</div>
+
+			<!-- Menu del header de la pagina-->
+
+			<div class="col-md-10">
+
+				<nav id="navbar">
+					<div class="main-menu stellarnav">
+						<ul class="menu-list">
+							<!-- 1. -->
+							<li class="menu-item active">
+								<a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+							</li>
+
+							<!-- 2. -->
+							<li class="menu-item has-sub">
+								<a href="#pages" class="nav-link">Pages</a>
+								<ul>
+									<li class="active">
+										<a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+									</li>
+									<li>
+										<a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+									</li>
+
+									<li>
+										<a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+									</li>
+								</ul>
+
+							</li>
+
+							<!-- 3. -->
+							<li class="menu-item">
+								<a class="nav-link" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+							</li>
+							
+							<!-- 4. -->
+							<li class="menu-item">
+								<a class="nav-link" asp-area="" asp-controller="Usuario" asp-action="Index">Usuarios</a>
+							</li>
+
+							<!-- 5. -->
+							<li class="menu-item">
+								<a class="nav-link" asp-area="" asp-controller="Libro" asp-action="Index">Libros</a>
+							</li>
+
+
+
+						</ul>
+
+						<div class="hamburger">
+							<span class="bar"></span>
+							<span class="bar"></span>
+							<span class="bar"></span>
+						</div>
+
+					</div>
+				</nav>
+
+			</div>
+
+		</div>
+	</div>
+
+
+</header>
