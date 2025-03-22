@@ -10,82 +10,89 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Index</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        .actions a {
+            margin-right: 10px;
+            text-decoration: none;
+            color: #c4a27a
+        }
+        .actions a:hover {
+            color: bisque;
+        }
+    </style>
 </head>
 <body>
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Titulo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Stock)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Autor)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaLanzamiento)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Editorial)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sinopsis)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Categoria)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Estado)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Notificacion)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Titulo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Stock)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Autor)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaLanzamiento)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Editorial)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Sinopsis)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Categoria.Nombre)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Estado.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Notificacion.Mensaje)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+    <p>
+        <a asp-action="Create">Agregar Libro</a>
+    </p>
+    <div class="search-container">
+        <form method="get" action="/Libro/Index" class="d-flex align-items-center mb-3" style="max-width: 350px;">
+            <input type="text" name="searchString" placeholder="Buscar libros..."
+                   class="form-control px-3 shadow-sm"
+                   style="border: 2px solid #c4a27a; border-radius: 50px; height: 40px; font-size: 14px;">
+
+            <button type="submit"
+                    class="shadow-sm ms-2 d-flex align-items-center justify-content-center"
+                    style="background-color: #c4a27a; color: white; font-weight: bold;
+                   padding: 8px 16px; border: none; border-radius: 50px;
+                   transition: all 0.3s ease-in-out; font-size: 14px; height: 40px; display: flex; align-items: center;">
+                <i class="icon icon-search me-1" style="font-size: 14px;"></i> Buscar
+            </button>
+        </form>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>@Html.DisplayNameFor(model => model.Titulo)</th>
+                <th>@Html.DisplayNameFor(model => model.Stock)</th>
+                <th>@Html.DisplayNameFor(model => model.Autor)</th>
+                <th>@Html.DisplayNameFor(model => model.FechaLanzamiento)</th>
+                <th>@Html.DisplayNameFor(model => model.Editorial)</th>
+                <th>@Html.DisplayNameFor(model => model.Sinopsis)</th>
+                <th>@Html.DisplayNameFor(model => model.Precio)</th>
+                <th>@Html.DisplayNameFor(model => model.Categoria)</th>
+                <th>@Html.DisplayNameFor(model => model.Estado)</th>
+                <th>@Html.DisplayNameFor(model => model.Notificacion)</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Stock)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Autor)</td>
+                    <td>@Html.DisplayFor(modelItem => item.FechaLanzamiento)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Editorial)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Sinopsis)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Precio)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Categoria.Nombre)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Estado.Id)</td>
+                    <td>@Html.DisplayFor(modelItem => item.Notificacion.Mensaje)</td>
+                    <td class="actions">
+                        <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                        <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                        <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
 </body>
 </html>

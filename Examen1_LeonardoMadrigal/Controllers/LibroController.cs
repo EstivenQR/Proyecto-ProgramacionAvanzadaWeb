@@ -18,11 +18,44 @@ namespace Examen1_LeonardoMadrigal.Controllers
             _context = context;
         }
 
-        // GET: Libro
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> UsuarioIndex(string searchString)
         {
-            var proyectoLibreriaContext = _context.Libro.Include(l => l.Categoria).Include(l => l.Estado).Include(l => l.Notificacion);
-            return View(await proyectoLibreriaContext.ToListAsync());
+            // Se obtiene la lista de libros con sus relaciones
+            var libros = _context.Libro
+                .Include(l => l.Categoria)
+                .Include(l => l.Estado)
+                .Include(l => l.Notificacion)
+                .AsQueryable();  // Permite aplicar filtros dinámicos
+
+            // Si el parámetro searchString no es nulo ni vacío, aplica el filtro
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                libros = libros.Where(l => l.Titulo.Contains(searchString)
+                                           || l.Autor.Contains(searchString)
+                                           || l.Editorial.Contains(searchString));
+            }
+
+            // Devuelve la vista con los libros filtrados
+            return View(await libros.ToListAsync());
+        }
+
+
+
+        // GET: Libro
+        public async Task<IActionResult> Index(string searchString)
+        {
+            var libros = _context.Libro
+                .Include(l => l.Categoria)
+                .Include(l => l.Estado)
+                .Include(l => l.Notificacion)
+                .AsQueryable();
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                libros = libros.Where(l => l.Titulo.Contains(searchString) || l.Autor.Contains(searchString));
+            }
+
+            return View(await libros.ToListAsync());
         }
 
         // GET: Libro/Details/5
@@ -60,14 +93,15 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Titulo,Stock,Autor,FechaLanzamiento,Editorial,Sinopsis,CategoriaId,EstadoId,NotificacionId")] Libro libro)
+        public async Task<IActionResult> Create([Bind("Id,Titulo,Stock,Autor,FechaLanzamiento,Editorial,Sinopsis,CategoriaId,EstadoId,NotificacionId,Precio")] Libro libro)
         {
             if (ModelState.IsValid)
             {
                 _context.Add(libro);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index)); // Redirigir al índice de libros
             }
+
             ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
             ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
             ViewData["NotificacionId"] = new SelectList(_context.Notificacion, "Id", "Mensaje", libro.NotificacionId);

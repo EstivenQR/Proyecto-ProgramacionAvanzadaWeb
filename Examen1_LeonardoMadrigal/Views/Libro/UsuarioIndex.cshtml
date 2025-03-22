@@ -1,0 +1,102 @@
+﻿@model IEnumerable<Examen1_LeonardoMadrigal.Models.Libro>
+
+@{
+    //Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lista de Libros</title>
+    <style>
+        .cards-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+            .card img {
+                max-width: 100%;
+                border-radius: 10px;
+            }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .card-price {
+            font-size: 16px;
+            color: #c4a27a;
+        }
+
+        .card-text {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+            .card-footer a {
+                text-decoration: none;
+                color: #007bff;
+            }
+
+                .card-footer a:hover {
+                    text-decoration: underline;
+                }
+    </style>
+</head>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Lista de Libros</title>
+</head>
+<body>
+    <!-- Barra de búsqueda -->
+    <form role="search" method="get" action="/Libro/UsuarioIndex" class="search-box">
+        <input class="search-field text search-input" placeholder="Buscar libros..." type="search" name="searchString">
+    </form>
+
+    <div class="row">
+        @foreach (var libro in Model)
+        {
+            <div class="col-md-3">
+                <div class="card">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">@libro.Titulo</h5>
+                        <p class="card-text">@libro.Autor</p>
+                        <p class="card-text">@libro.Editorial</p>
+                        <p class="card-text">@libro.Sinopsis</p>
+                        <p class="card-text">Precio: $@libro.Precio</p>
+                        <a href="@Url.Action("Details", "Libro", new { id = libro.Id })" class="btn btn-primary">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</body>
+</html>
+
+</html>

@@ -10,6 +10,10 @@
         public string Editorial { get; set; }
         public string Sinopsis { get; set; }
 
+        public decimal Precio { get; set; }
+
+
+
         // Relaciones con las tablas
 
         // 1.
