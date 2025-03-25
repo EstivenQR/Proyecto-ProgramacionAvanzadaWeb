@@ -9,32 +9,26 @@
         public DateTime FechaLanzamiento { get; set; }
         public string Editorial { get; set; }
         public string Sinopsis { get; set; }
-
         public decimal Precio { get; set; }
-
-
 
         // Relaciones con las tablas
 
-        // 1.
-        public int CategoriaId { get; set; } // Referencia a la tabla de Categoria
-
-        // Referencia a la tabla de categoria
+        // 1. Relación con la tabla Categoria
+        public int CategoriaId { get; set; }
         public Categoria? Categoria { get; set; }
 
-        // 2. 
-        public int EstadoId { get; set; } // Referencia a la tabla de Estado
-
-        // Referencia a la tabla de estado
+        // 2. Relación con la tabla Estado
+        public int EstadoId { get; set; }
         public Estado? Estado { get; set; }
 
-        // 3. 
-        public int NotificacionId { get; set; } // Referencia a la tabla de Notificacion
-
-        // Referencia a la tabla de notificacion
+        // 3. Relación con la tabla Notificacion
+        public int NotificacionId { get; set; }
         public Notificaciones? Notificacion { get; set; }
 
-        // Referencia a que hay una llave foranea en la tabla de pedido
+        // 4. Relación con la tabla Pedido
         public IEnumerable<Pedido>? Pedidos { get; set; }
+
+        // 5. Relación con la tabla Prestamo
+        public ICollection<Prestamo>? Prestamos { get; set; }
     }
 }

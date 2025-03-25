@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace Examen1_LeonardoMadrigal.Models
+﻿namespace Examen1_LeonardoMadrigal.Models
 {
     public class Usuario
     {
@@ -13,31 +11,23 @@ namespace Examen1_LeonardoMadrigal.Models
         public string Username { get; set; }
         public string Password { get; set; }
 
-
-
         // Relaciones con las tablas
 
-        // 1.
-        public int RolId { get; set; } // Referencia a la tabla de Rol
-
-        // Referencia a la tabla de rol
+        // 1. Relación con la tabla Rol
+        public int RolId { get; set; }
         public Rol? Rol { get; set; }
 
-        // 2. 
-        public int EstadoId { get; set; } // Referencia a la tabla de Estado
-
-        // Referencia a la tabla de estado
+        // 2. Relación con la tabla Estado
+        public int EstadoId { get; set; }
         public Estado? Estado { get; set; }
 
-        // Referencia a que hay una llave foranea en la tabla de pedido
+        // 3. Relación con la tabla Pedido
         public IEnumerable<Pedido>? Pedidos { get; set; }
 
-        // Referencia a que hay una llave foranea en la tabla de Multa
+        // 4. Relación con la tabla Multa
         public IEnumerable<Multa>? Multas { get; set; }
 
-
-
-
-
+        // 5. Relación con la tabla Prestamo
+        public ICollection<Prestamo>? Prestamos { get; set; }
     }
 }

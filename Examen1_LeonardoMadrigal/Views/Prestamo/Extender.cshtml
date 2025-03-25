@@ -1,0 +1,14 @@
+﻿@model Examen1_LeonardoMadrigal.Models.Prestamo
+
+@{
+    ViewData["Title"] = "Extender Préstamo";
+}
+
+<h2>Extensión de Préstamo</h2>
+
+<div class="alert alert-success">
+    <strong>¡Éxito!</strong> El préstamo del libro <em>@Model.Libro.Titulo</em> se ha extendido hasta el <strong>@Model.FechaFin.ToString("dd/MM/yyyy")</strong>.
+</div>
+
+<a href="@Url.Action("Prestamos")" class="btn btn-secondary">Volver a la lista de préstamos</a>
+
