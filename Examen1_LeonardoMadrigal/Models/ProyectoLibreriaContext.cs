@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Examen1_LeonardoMadrigal.Migrations;
+using Microsoft.EntityFrameworkCore;
 
 namespace Examen1_LeonardoMadrigal.Models
 {
@@ -47,6 +48,7 @@ namespace Examen1_LeonardoMadrigal.Models
             {
                 Libro.HasKey(e => e.Id);
                 Libro.Property(n => n.Titulo).HasMaxLength(110).IsRequired();
+                Libro.Property(n => n.Precio).HasPrecision(18, 2);
                 Libro.Property(n => n.Stock).IsRequired();
                 Libro.Property(n => n.Autor).HasMaxLength(100).IsRequired();
                 Libro.Property(n => n.FechaLanzamiento).IsRequired();
@@ -121,14 +123,28 @@ namespace Examen1_LeonardoMadrigal.Models
             // Configuración de la tabla Notificaciones
             modelBuilder.Entity<Notificaciones>().HasKey(n => n.Id);
 
-            // Agrega la configuración de Prestamo
             modelBuilder.Entity<Prestamo>(Prestamo =>
             {
                 Prestamo.HasKey(e => e.Id);
                 Prestamo.Property(p => p.FechaInicio).IsRequired();
                 Prestamo.Property(p => p.FechaFin).IsRequired();
                 Prestamo.HasOne(p => p.Libro).WithMany(l => l.Prestamos).HasForeignKey(p => p.LibroId);
-             });
+
+            });
+
+            modelBuilder.Entity<Prestamo>(entity =>
+            {
+                entity.HasOne(p => p.Usuario)
+                      .WithMany(u => u.Prestamos)
+                      .HasForeignKey(p => p.UsuarioId)
+                      .OnDelete(DeleteBehavior.Restrict); 
+            });
+
+
+
+
+
+
         }
     }
 }

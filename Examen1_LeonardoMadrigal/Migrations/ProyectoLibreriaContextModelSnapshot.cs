@@ -117,6 +117,7 @@ namespace Examen1_LeonardoMadrigal.Migrations
                         .HasColumnType("int");
 
                     b.Property<decimal>("Precio")
+                        .HasPrecision(18, 2)
                         .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Sinopsis")
@@ -246,12 +247,17 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Property<int>("LibroId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("PrestamoId")
+                        .HasColumnType("int");
+
                     b.Property<int>("UsuarioId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("LibroId");
+
+                    b.HasIndex("PrestamoId");
 
                     b.HasIndex("UsuarioId");
 
@@ -433,13 +439,19 @@ namespace Examen1_LeonardoMadrigal.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Examen1_LeonardoMadrigal.Models.Usuario", null)
+                    b.HasOne("Examen1_LeonardoMadrigal.Models.Prestamo", null)
+                        .WithMany("Prestamos")
+                        .HasForeignKey("PrestamoId");
+
+                    b.HasOne("Examen1_LeonardoMadrigal.Models.Usuario", "Usuario")
                         .WithMany("Prestamos")
                         .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Libro");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Usuario", b =>
@@ -494,6 +506,11 @@ namespace Examen1_LeonardoMadrigal.Migrations
             modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Pedido", b =>
                 {
                     b.Navigation("Devoluciones");
+                });
+
+            modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Prestamo", b =>
+                {
+                    b.Navigation("Prestamos");
                 });
 
             modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Rol", b =>
