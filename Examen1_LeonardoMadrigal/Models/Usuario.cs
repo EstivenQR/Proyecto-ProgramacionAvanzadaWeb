@@ -29,5 +29,7 @@
 
         // 5. Relación con la tabla Prestamo
         public ICollection<Prestamo>? Prestamos { get; set; }
+
+
     }
 }
