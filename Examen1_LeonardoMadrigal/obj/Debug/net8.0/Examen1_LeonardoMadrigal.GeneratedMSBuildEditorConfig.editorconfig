@@ -17,115 +17,115 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Examen1_LeonardoMadrigal
 build_property.RootNamespace = Examen1_LeonardoMadrigal
-build_property.ProjectDir = C:\Users\JOSHUA\Desktop\Martes\Examen1_LeonardoMadrigal\
+build_property.ProjectDir = C:\Users\JOSHUA\Desktop\MartesLib\Examen1_LeonardoMadrigal\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\JOSHUA\Desktop\Martes\Examen1_LeonardoMadrigal
+build_property.MSBuildProjectDirectory = C:\Users\JOSHUA\Desktop\MartesLib\Examen1_LeonardoMadrigal
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Home/Index.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Home/Privacy.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Libro/Create.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Libro/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Libro/Delete.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Libro/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Libro/Details.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Libro/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Libro/Edit.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Libro/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Libro/Index.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Libro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Libro/UsuarioIndex.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Libro/UsuarioIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cVXN1YXJpb0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Prestamo/Create.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Prestamo/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Prestamo/Details.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Prestamo/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Prestamo/Edit.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Prestamo/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Prestamo/Extender.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Prestamo/Extender.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cRXh0ZW5kZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Prestamo/Index.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Prestamo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Shared/Error.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Shared/_Encabezado.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Shared/_Encabezado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbmNhYmV6YWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Shared/_PiePagina.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Shared/_PiePagina.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QaWVQYWdpbmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Usuario/Create.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Usuario/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Usuario/Delete.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Usuario/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Usuario/Details.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Usuario/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Usuario/Edit.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Usuario/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Usuario/Index.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/_ViewImports.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/_ViewStart.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Shared/_Layout.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f7ad5me6j1
 
-[C:/Users/JOSHUA/Desktop/Martes/Examen1_LeonardoMadrigal/Views/Shared/_LayoutPlantLib.cshtml]
+[C:/Users/JOSHUA/Desktop/MartesLib/Examen1_LeonardoMadrigal/Views/Shared/_LayoutPlantLib.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQbGFudExpYi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-5cplpqvkis
