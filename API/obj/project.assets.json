@@ -8089,19 +8089,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\estiv\\.nuget\\packages\\": {}
+    "C:\\Users\\JOSHUA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\JOSHUA\\Desktop\\Martes\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\estiv\\.nuget\\packages\\",
-      "outputPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\API\\obj\\",
+      "projectPath": "C:\\Users\\JOSHUA\\Desktop\\Martes\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\JOSHUA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JOSHUA\\Desktop\\Martes\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\estiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JOSHUA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8116,8 +8116,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj": {
-              "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj"
+            "C:\\Users\\JOSHUA\\Desktop\\Martes\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj": {
+              "projectPath": "C:\\Users\\JOSHUA\\Desktop\\Martes\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj"
             }
           }
         }

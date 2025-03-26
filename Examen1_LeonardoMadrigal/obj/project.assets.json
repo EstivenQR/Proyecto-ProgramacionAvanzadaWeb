@@ -7596,19 +7596,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\estiv\\.nuget\\packages\\": {}
+    "C:\\Users\\JOSHUA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
+      "projectUniqueName": "C:\\Users\\JOSHUA\\Desktop\\Martes\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
       "projectName": "Examen1_LeonardoMadrigal",
-      "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
-      "packagesPath": "C:\\Users\\estiv\\.nuget\\packages\\",
-      "outputPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\obj\\",
+      "projectPath": "C:\\Users\\JOSHUA\\Desktop\\Martes\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
+      "packagesPath": "C:\\Users\\JOSHUA\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\JOSHUA\\Desktop\\Martes\\Examen1_LeonardoMadrigal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\estiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\JOSHUA\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
