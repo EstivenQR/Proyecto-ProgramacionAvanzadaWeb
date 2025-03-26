@@ -4,6 +4,7 @@ using Examen1_LeonardoMadrigal.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Examen1_LeonardoMadrigal.Migrations
 {
     [DbContext(typeof(ProyectoLibreriaContext))]
-    partial class ProyectoLibreriaContextModelSnapshot : ModelSnapshot
+    [Migration("20250326004215_Prestamo")]
+    partial class Prestamo
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -162,14 +165,9 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Property<double>("PrecioMulta")
                         .HasColumnType("float");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("EstadoId");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Multa");
                 });
@@ -212,16 +210,11 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Property<int>("LibroId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("EstadoId");
 
                     b.HasIndex("LibroId");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Pedido");
                 });
@@ -246,14 +239,9 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Property<int>("LibroId")
                         .HasColumnType("int");
 
-                    b.Property<int>("UsuarioId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("LibroId");
-
-                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Prestamo");
                 });
@@ -430,12 +418,6 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.HasOne("Examen1_LeonardoMadrigal.Models.Libro", "Libro")
                         .WithMany("Prestamos")
                         .HasForeignKey("LibroId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Examen1_LeonardoMadrigal.Models.Usuario", null)
-                        .WithMany("Prestamos")
-                        .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
