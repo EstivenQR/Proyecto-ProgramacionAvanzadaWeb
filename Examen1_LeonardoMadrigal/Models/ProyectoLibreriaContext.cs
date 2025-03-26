@@ -52,6 +52,8 @@ namespace Examen1_LeonardoMadrigal.Models
                 Libro.Property(n => n.FechaLanzamiento).IsRequired();
                 Libro.Property(n => n.Editorial).HasMaxLength(100).IsRequired();
                 Libro.Property(n => n.Sinopsis).HasMaxLength(500);
+                Libro.Property(n => n.Precio).HasPrecision(18, 2);
+
             });
 
             // Se configura la tabla de Multa
