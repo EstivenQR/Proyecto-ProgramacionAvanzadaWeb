@@ -24,4 +24,8 @@
     <Folder Include="ViewModels\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ProyectoLibreriaModels\ProyectoLibreriaModels.csproj" />
+  </ItemGroup>
+
 </Project>
