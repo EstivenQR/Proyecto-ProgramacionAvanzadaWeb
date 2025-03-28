@@ -146,18 +146,19 @@ namespace Examen1_LeonardoMadrigal.Models
 
         public async Task<bool> LoginUsuario(string Usuario, string contraseña)
         {
-            var Exitos = new SqlParameter()
+            var Exitos = new SqlParameter("@Exitos", System.Data.SqlDbType.Bit)
             {
-                ParameterName = "@Exitos",
-                SqlDbType = System.Data.SqlDbType.Bit,
                 Direction = System.Data.ParameterDirection.Output
             };
-            int f = await Database.ExecuteSqlRawAsync("sp_Login @User, @Contraseña, @Exitos OUTPUT",
-                new SqlParameter("@User", Usuario),
-                new SqlParameter("@Contraseña", contraseña),
+
+            await Database.ExecuteSqlRawAsync("EXEC sp_Login @User, @Contraseña, @Exitos OUTPUT",
+                new SqlParameter("@User", Usuario ?? (object)DBNull.Value),
+                new SqlParameter("@Contraseña", contraseña ?? (object)DBNull.Value),
                 Exitos);
-            return (bool)Exitos.Value;
+
+            return (bool)(Exitos.Value ?? false);
         }
+
         // Me puede salir un usuario nulo y por ende es imporante el ? para que no me de error
         public async Task<Usuario?> ObtenerUsuario(string Usu, string Contraseña)
         {

@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using Examen1_LeonardoMadrigal.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Authentication;
+using System.Security.Claims;
 
 namespace Examen1_LeonardoMadrigal.Controllers
 {
@@ -26,6 +29,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
         }
 
         // GET: Usuario/Details/5
+        [Authorize(Roles = "2")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -186,6 +190,53 @@ namespace Examen1_LeonardoMadrigal.Controllers
         private bool UsuarioExists(int id)
         {
             return _context.Usuario.Any(e => e.Id == id);
+        }
+
+        [HttpGet]
+        public IActionResult Login()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Login(string Usuario, string Contraseña)
+        {
+            Console.WriteLine($"Usuario: {Usuario}, Contraseña: {Contraseña}");
+            bool loginExitoso = await _context.LoginUsuario(Usuario, Contraseña);
+
+            if (loginExitoso)
+            {
+                var usuario = await _context.ObtenerUsuario(Usuario, Contraseña);
+                if (usuario != null)
+                {
+                    var claims = new List<Claim>
+            {
+                new Claim(ClaimTypes.Name, usuario.Username),
+                new Claim(ClaimTypes.Role, usuario.RolId.ToString()) // Asegurar que el rol sea un string
+            };
+
+                    var claimsIdentity = new ClaimsIdentity(claims, "CookieAuth");
+                    var authProperties = new AuthenticationProperties
+                    {
+                        IsPersistent = true
+                    };
+
+                    await HttpContext.SignInAsync("CookieAuth", new ClaimsPrincipal(claimsIdentity), authProperties);
+
+                    return RedirectToAction("Index", "Home");
+                }
+            }
+
+            ViewBag.Error = "Usuario o contraseña incorrectos";
+            return View();
+        }
+
+
+
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Home");
         }
     }
 }
