@@ -7,12 +7,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 // Configurar DbContext
-builder.Services.AddDbContext<ProyectoLibreriaContext>(op =>
-{
-    op.UseSqlServer(builder.Configuration.GetConnectionString("ProyectoLibreria"))
-      .LogTo(Console.WriteLine, LogLevel.Information)
-      .EnableSensitiveDataLogging();
-});
+builder.Services.AddDbContext<ProyectoLibreriaContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ProyectoLibreria"),
+    b => b.MigrationsAssembly("Examen1_LeonardoMadrigal"))
+);
 
 // Habilitar sesiones
 builder.Services.AddSession(options =>

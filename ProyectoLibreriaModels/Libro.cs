@@ -10,6 +10,7 @@
         public string Editorial { get; set; }
         public string Sinopsis { get; set; }
         public decimal Precio { get; set; }
+        public byte[]? ImagenPortada { get; set; }
 
         // Relaciones con las tablas
 
