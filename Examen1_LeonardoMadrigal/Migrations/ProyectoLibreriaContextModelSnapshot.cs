@@ -113,6 +113,9 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Property<DateTime>("FechaLanzamiento")
                         .HasColumnType("datetime2");
 
+                    b.Property<byte[]>("ImagenPortada")
+                        .HasColumnType("varbinary(max)");
+
                     b.Property<int>("NotificacionId")
                         .HasColumnType("int");
 
