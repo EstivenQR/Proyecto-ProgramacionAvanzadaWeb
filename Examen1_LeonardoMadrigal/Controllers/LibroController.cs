@@ -141,38 +141,71 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Titulo,Stock,Autor,FechaLanzamiento,Editorial,Sinopsis,CategoriaId,EstadoId,NotificacionId")] Libro libro)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Titulo,Stock,Autor,FechaLanzamiento,Editorial,Sinopsis,CategoriaId,EstadoId,NotificacionId,Precio")] Libro libro, IFormFile imagenPortada)
         {
             if (id != libro.Id)
             {
                 return NotFound();
             }
 
-            if (ModelState.IsValid)
+            // Verificar errores en ModelState
+            if (!ModelState.IsValid)
             {
-                try
+                // Mostrar errores en la consola para depuración
+                foreach (var error in ModelState.Values.SelectMany(v => v.Errors))
                 {
-                    _context.Update(libro);
-                    await _context.SaveChangesAsync();
+                    Console.WriteLine(error.ErrorMessage);
+                    //_logger.LogError("Error en ModelState: " + error.ErrorMessage); // Para depuración en logs
                 }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!LibroExists(libro.Id))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+
+                // Recargar SelectLists
+                ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
+                ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
+                ViewData["NotificacionId"] = new SelectList(_context.Notificacion, "Id", "Mensaje", libro.NotificacionId);
+                return View(libro);
             }
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
-            ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
-            ViewData["NotificacionId"] = new SelectList(_context.Notificacion, "Id", "Mensaje", libro.NotificacionId);
-            return View(libro);
+
+            try
+            {
+                // Obtener el libro actual de la base de datos
+                var libroExistente = await _context.Libro.AsNoTracking().FirstOrDefaultAsync(l => l.Id == id);
+                if (libroExistente == null)
+                {
+                    return NotFound();
+                }
+
+                // Si se sube una nueva imagen, la reemplazamos; si no, mantenemos la actual
+                if (imagenPortada != null && imagenPortada.Length > 0)
+                {
+                    using (var ms = new MemoryStream())
+                    {
+                        await imagenPortada.CopyToAsync(ms);
+                        libro.ImagenPortada = ms.ToArray();
+                    }
+                }
+                else
+                {
+                    libro.ImagenPortada = libroExistente.ImagenPortada; // Mantener la imagen actual
+                }
+
+                _context.Update(libro);
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!_context.Libro.Any(l => l.Id == id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return RedirectToAction(nameof(Index));
         }
+
 
         // GET: Libro/Delete/5
         public async Task<IActionResult> Delete(int? id)
