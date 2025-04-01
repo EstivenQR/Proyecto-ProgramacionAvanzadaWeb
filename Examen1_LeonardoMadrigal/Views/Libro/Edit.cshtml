@@ -17,7 +17,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="Edit">
+            <form asp-action="Edit" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
@@ -64,6 +64,11 @@
                 <label asp-for="NotificacionId" class="control-label"></label>
                 <select asp-for="NotificacionId" class="form-control" asp-items="ViewBag.NotificacionId"></select>
                 <span asp-validation-for="NotificacionId" class="text-danger"></span>
+            </div>
+                <!-- Campo para cargar la imagen -->
+            <div class="form-group">
+                <label for="ImagenPortada">Imagen de Portada</label>
+                <input type="file" class="form-control" name="imagenPortada" />
             </div>
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
