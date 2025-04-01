@@ -28,3 +28,18 @@ F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreri
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.pdb
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.genruntimeconfig.cache
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ref\ProyectoLibreriaModels.dll
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.deps.json
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.runtimeconfig.json
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.dll
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.pdb
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.csproj.AssemblyReference.cache
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.AssemblyInfoInputs.cache
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.AssemblyInfo.cs
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.csproj.CoreCompileInputs.cache
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.sourcelink.json
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.dll
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\refint\ProyectoLibreriaModels.dll
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.pdb
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.genruntimeconfig.cache
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ref\ProyectoLibreriaModels.dll

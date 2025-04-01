@@ -1,0 +1,27 @@
+﻿@model Examen1_LeonardoMadrigal.Models.Notificaciones
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Eliminar Notificación</title>
+</head>
+<body>
+    <h1>Eliminar Notificación</h1>
+
+    <div>
+        <strong>Mensaje:</strong> @Model.Mensaje
+    </div>
+    <div>
+        <strong>Fecha de Solicitud:</strong> @Model.FechaSolicitud.ToString("dd/MM/yyyy")
+    </div>
+
+    <form asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="form-group">
+            <input type="submit" value="Eliminar" class="btn btn-danger" />
+            <a href="@Url.Action("Index", "Notificacion")" class="btn btn-secondary">Cancelar</a>
+        </div>
+    </form>
+</body>
+</html>
