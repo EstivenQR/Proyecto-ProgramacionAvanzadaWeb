@@ -1,0 +1,21 @@
+﻿@model Examen1_LeonardoMadrigal.Models.Libro
+
+@{
+    ViewData["Title"] = "Book Details";
+}
+
+<div class="book-details">
+    <a href="@Url.Action("AllBooks", "Home")" class="btn btn-primary">Volver a Inicio</a>
+    <h2>@Model.Titulo</h2>
+    <p><strong>Autor:</strong> @Model.Autor</p>
+    <p><strong>Precio:</strong> @Model.Precio</p>
+    <p><strong>Sipnosis:</strong> @Model.Sinopsis</p>
+    <p><strong>Categoria:</strong> @Model.Categoria.Nombre</p>
+
+    <!-- Mostrar la imagen de la portada -->
+    <img src="data:image/jpeg;base64,@Convert.ToBase64String(Model.ImagenPortada)" alt="Cover" class="book-cover">
+
+
+
+ 
+</div>

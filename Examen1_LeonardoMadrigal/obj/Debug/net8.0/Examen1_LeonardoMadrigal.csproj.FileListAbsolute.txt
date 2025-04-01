@@ -1309,7 +1309,6 @@ C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_Leonard
 C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.pdb
 C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.genruntimeconfig.cache
 C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\ref\Examen1_LeonardoMadrigal.dll
-C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\JOSHUA\Desktop\Martes\Examen1_LeonardoMadrigal\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\JOSHUA\Desktop\Martes\Examen1_LeonardoMadrigal\bin\Debug\net8.0\appsettings.json
 C:\Users\JOSHUA\Desktop\Martes\Examen1_LeonardoMadrigal\bin\Debug\net8.0\Examen1_LeonardoMadrigal.staticwebassets.runtime.json
@@ -2362,3 +2361,6 @@ F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\Examen1_Leonard
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.pdb
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.genruntimeconfig.cache
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\ref\Examen1_LeonardoMadrigal.dll
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\bin\Debug\net8.0\ProyectoLibreriaModels.dll
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\bin\Debug\net8.0\ProyectoLibreriaModels.pdb
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

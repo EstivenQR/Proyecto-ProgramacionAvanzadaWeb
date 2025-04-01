@@ -12,6 +12,7 @@
         public decimal Precio { get; set; }
         public byte[]? ImagenPortada { get; set; }
 
+
         // Relaciones con las tablas
 
         // 1. Relación con la tabla Categoria

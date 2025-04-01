@@ -18,7 +18,5 @@
     </PackageReference>
   </ItemGroup>
 	
-	<ItemGroup>
-    <ProjectReference Include="..\Examen1_LeonardoMadrigal\Examen1_LeonardoMadrigal.csproj" />
-	</ItemGroup>
+	
 </Project>

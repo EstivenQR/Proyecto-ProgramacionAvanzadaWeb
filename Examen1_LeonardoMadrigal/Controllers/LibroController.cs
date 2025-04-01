@@ -89,23 +89,32 @@ namespace Examen1_LeonardoMadrigal.Controllers
         }
 
         // POST: Libro/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Titulo,Stock,Autor,FechaLanzamiento,Editorial,Sinopsis,CategoriaId,EstadoId,NotificacionId,Precio")] Libro libro)
+        public async Task<IActionResult> Create([Bind("Id,Titulo,Stock,Autor,FechaLanzamiento,Editorial,Sinopsis,CategoriaId,EstadoId,NotificacionId,Precio")] Libro libro, IFormFile imagenPortada)
         {
-            if (ModelState.IsValid)
+            // Validación
+            if (!ModelState.IsValid)
             {
-                _context.Add(libro);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index)); // Redirigir al índice de libros
+                ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
+                ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
+                ViewData["NotificacionId"] = new SelectList(_context.Notificacion, "Id", "Mensaje", libro.NotificacionId);
+                return View(libro);
             }
 
-            ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
-            ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
-            ViewData["NotificacionId"] = new SelectList(_context.Notificacion, "Id", "Mensaje", libro.NotificacionId);
-            return View(libro);
+            // Procesar la imagen si se sube un archivo
+            if (imagenPortada != null && imagenPortada.Length > 0)
+            {
+                using (var ms = new MemoryStream())
+                {
+                    await imagenPortada.CopyToAsync(ms);
+                    libro.ImagenPortada = ms.ToArray();  // Guardar la imagen en el campo ImagenPortada
+                }
+            }
+
+            _context.Add(libro);
+            await _context.SaveChangesAsync();
+            return RedirectToAction(nameof(Index)); // Redirigir al índice de libros
         }
 
         // GET: Libro/Edit/5
