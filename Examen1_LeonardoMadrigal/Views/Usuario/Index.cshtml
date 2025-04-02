@@ -64,7 +64,14 @@
                 @Html.DisplayFor(modelItem => item.Telefono)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.RutaImagen)
+                        @if (item.RutaImagen != null)
+                        {
+                            <img src="data:image/png;base64,@(Convert.ToBase64String(item.RutaImagen))" width="100" />
+                        }
+                        else
+                        {
+                            <span>Sin imagen</span>
+                        }
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Username)

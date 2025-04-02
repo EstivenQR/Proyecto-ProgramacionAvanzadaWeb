@@ -231,6 +231,39 @@ namespace Examen1_LeonardoMadrigal.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Register(Usuario usuario, IFormFile imagenPerfil)
+        {
+            ModelState.Remove("imagenPerfil"); // Se remueve la validación si no es obligatorio
+            if (!ModelState.IsValid)
+            {
+                ViewBag.ErrorRegistro = "Verifique los datos ingresados.";
+                return View("Login"); // Se retorna a la misma vista de login
+            }
+
+            // Se asignan valores predeterminados
+            usuario.RolId = 1; 
+            usuario.EstadoId = 1; 
+
+            // Procesar la imagen si se sube un archivo
+            if (imagenPerfil != null && imagenPerfil.Length > 0)
+            {
+                using (var ms = new MemoryStream())
+                {
+                    await imagenPerfil.CopyToAsync(ms);
+                    usuario.RutaImagen = ms.ToArray();
+                }
+            }
+
+            _context.Add(usuario);
+            await _context.SaveChangesAsync();
+
+            ViewBag.MensajeRegistro = "Registro exitoso, ahora puedes iniciar sesión.";
+            return View("Login"); // Se retorna a la misma vista de login con mensaje de éxito
+        }
+
+
 
 
         public IActionResult Logout()
