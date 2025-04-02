@@ -1,508 +1,512 @@
 {
   "Files": [
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Examen1_LeonardoMadrigal.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Examen1_LeonardoMadrigal.bundle.scp.css"
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Examen1_LeonardoMadrigal.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Examen1_LeonardoMadrigal.18kw0vdhda.bundle.scp.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\css\\ajax-loader.gif",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\css\\ajax-loader.gif",
       "PackagePath": "staticwebassets\\PlantLib\\css\\ajax-loader.gif"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\css\\normalize.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\css\\normalize.css",
       "PackagePath": "staticwebassets\\PlantLib\\css\\normalize.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\css\\vendor.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\css\\vendor.css",
       "PackagePath": "staticwebassets\\PlantLib\\css\\vendor.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\Read Me.txt",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\Read Me.txt",
       "PackagePath": "staticwebassets\\PlantLib\\icomoon\\Read Me.txt"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\fonts\\icomoon.eot",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\fonts\\icomoon.eot",
       "PackagePath": "staticwebassets\\PlantLib\\icomoon\\fonts\\icomoon.eot"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\fonts\\icomoon.svg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\fonts\\icomoon.svg",
       "PackagePath": "staticwebassets\\PlantLib\\icomoon\\fonts\\icomoon.svg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\fonts\\icomoon.ttf",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\fonts\\icomoon.ttf",
       "PackagePath": "staticwebassets\\PlantLib\\icomoon\\fonts\\icomoon.ttf"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\fonts\\icomoon.woff",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\fonts\\icomoon.woff",
       "PackagePath": "staticwebassets\\PlantLib\\icomoon\\fonts\\icomoon.woff"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\icomoon.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\icomoon.css",
       "PackagePath": "staticwebassets\\PlantLib\\icomoon\\icomoon.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\selection.json",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\icomoon\\selection.json",
       "PackagePath": "staticwebassets\\PlantLib\\icomoon\\selection.json"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\app-store.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\app-store.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\app-store.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\close.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\close.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\chocolat\\close.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\fullscreen-black.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\fullscreen-black.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\chocolat\\fullscreen-black.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\fullscreen.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\fullscreen.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\chocolat\\fullscreen.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\left.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\left.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\chocolat\\left.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\loader.gif",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\loader.gif",
       "PackagePath": "staticwebassets\\PlantLib\\images\\chocolat\\loader.gif"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\right.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\chocolat\\right.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\chocolat\\right.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image1.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image1.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\client-image1.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image2.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image2.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\client-image2.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image3.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image3.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\client-image3.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image4.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image4.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\client-image4.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image5.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\client-image5.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\client-image5.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\curly-divider.svg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\curly-divider.svg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\curly-divider.svg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\default.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\default.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\default.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\device.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\device.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\device.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\google-play.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\google-play.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\google-play.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\item.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item1.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item1.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\item1.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item3.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item3.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\item3.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item4.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item4.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\item4.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item5.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\item5.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\item5.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\leaf.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\leaf.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\leaf.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\main-banner1.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\main-banner1.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\main-banner1.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\main-banner2.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\main-banner2.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\main-banner2.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\main-logo.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\main-logo.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\main-logo.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\ns-arrow-right.svg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\ns-arrow-right.svg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\ns-arrow-right.svg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\pattern1.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\pattern1.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\pattern1.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\pattern2.png",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\pattern2.png",
       "PackagePath": "staticwebassets\\PlantLib\\images\\pattern2.png"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\post-img1.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\post-img1.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\post-img1.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\post-img2.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\post-img2.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\post-img2.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\post-img3.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\post-img3.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\post-img3.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item1.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item1.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\product-item1.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item2.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item2.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\product-item2.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item3.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item3.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\product-item3.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item4.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item4.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\product-item4.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item5.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item5.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\product-item5.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item6.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item6.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\product-item6.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item7.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item7.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\product-item7.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item8.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\product-item8.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\product-item8.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\single-image.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\single-image.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\single-image.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item1.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item1.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\tab-item1.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item2.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item2.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\tab-item2.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item3.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item3.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\tab-item3.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item4.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item4.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\tab-item4.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item5.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item5.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\tab-item5.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item6.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item6.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\tab-item6.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item7.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item7.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\tab-item7.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item8.jpg",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\images\\tab-item8.jpg",
       "PackagePath": "staticwebassets\\PlantLib\\images\\tab-item8.jpg"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\jquery-1.11.0.min.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\jquery-1.11.0.min.js",
       "PackagePath": "staticwebassets\\PlantLib\\js\\jquery-1.11.0.min.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\modernizr.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\modernizr.js",
       "PackagePath": "staticwebassets\\PlantLib\\js\\modernizr.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\plugins.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\plugins.js",
       "PackagePath": "staticwebassets\\PlantLib\\js\\plugins.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\script.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\script.js",
       "PackagePath": "staticwebassets\\PlantLib\\js\\script.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\slideNav.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\slideNav.js",
       "PackagePath": "staticwebassets\\PlantLib\\js\\slideNav.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\slideNav.min.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\js\\slideNav.min.js",
       "PackagePath": "staticwebassets\\PlantLib\\js\\slideNav.min.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\style.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\PlantLib\\style.css",
       "PackagePath": "staticwebassets\\PlantLib\\style.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Examen1_LeonardoMadrigal.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Examen1_LeonardoMadrigal.Microsoft.AspNetCore.StaticWebAssets.props",

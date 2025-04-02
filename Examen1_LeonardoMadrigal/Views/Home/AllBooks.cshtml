@@ -1,18 +1,57 @@
 ﻿@model IEnumerable<Examen1_LeonardoMadrigal.Models.Libro>
 
+<style>
+    .btn-custom {
+        background-color: #cfa89b; /* El color que usaste anteriormente */
+        color: white;
+        font-weight: bold;
+        padding: 12px 30px; /* Padding extra para hacerlo más prominente */
+        border-radius: 20px; /* Bordes ligeramente más redondeados */
+        border: none;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 20px; /* Espacio desde los libros */
+        transition: background-color 0.3s ease;
+    }
+
+        .btn-custom:hover {
+            background-color: #b78c6b; /* Un tono más oscuro al pasar el mouse */
+        }
+
+    .text-center {
+        text-align: center;
+    }
+
+    /* Ajustes en el grid de productos */
+    .product-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-style img {
+        width: 100%;
+        height: 300px; /* Mantener una altura uniforme */
+        object-fit: contain;
+    }
+</style>
+
 <section id="all-books" class="bookshelf py-5 my-5">
     <div class="container">
         <div class="section-header align-center">
             <div class="title">
-                <span>All Books</span>
+                <span>Todos los Libros</span>
             </div>
-            <h2 class="section-title">Featured Books</h2>
+            <h2 class="section-title">Libros Destacados</h2>
         </div>
 
-        <div class="row">
+        <!-- Botón Volver a inicio debajo del título -->
+       
+        <!-- Listado de libros -->
+        <div class="row mt-5">
             @foreach (var libro in Model)
             {
-                <div class="col-md-3">
+                <div class="col-md-3 mb-4">
                     <div class="product-item">
                         <figure class="product-style">
                             <img src="data:image/jpeg;base64,@Convert.ToBase64String(libro.ImagenPortada)" alt="Books" class="product-item">
@@ -25,6 +64,9 @@
                     </div>
                 </div>
             }
+        </div>
+        <div class="text-center mt-4">
+            <a href="@Url.Action("Index", "Home")" class="btn btn-custom">Volver a inicio</a>
         </div>
     </div>
 </section>
