@@ -9,12 +9,68 @@
     <div style="color:red;">@ViewBag.Error</div>
 }
 
-<form method="post">
-    <label>Username:</label>
-    <input type="text" name="Usuario" required />
+@if (ViewBag.MensajeRegistro != null)
+{
+    <div style="color:green;">@ViewBag.MensajeRegistro</div>
+}
 
-    <label>Contraseña:</label>
-    <input type="password" name="Contraseña" required />
+<div>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="login-tab" data-bs-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="true">Iniciar Sesión</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="register-tab" data-bs-toggle="tab" href="#register" role="tab" aria-controls="register" aria-selected="false">Registrarse</a>
+        </li>
+    </ul>
 
-    <button type="submit">Iniciar Sesión</button>
-</form>
+    <!-- Tab content -->
+    <div class="tab-content">
+        <!-- Formulario de Login -->
+        <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
+            <form method="post" asp-controller="Usuario" asp-action="Login">
+                <label>Username:</label>
+                <input type="text" name="Usuario" required class="form-control" />
+
+                <label>Contraseña:</label>
+                <input type="password" name="Contraseña" required class="form-control" />
+
+                <button type="submit" class="btn btn-primary mt-2">Iniciar Sesión</button>
+            </form>
+        </div>
+
+        <!-- Formulario de Registro -->
+        <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+            @if (ViewBag.ErrorRegistro != null)
+            {
+                <div style="color:red;">@ViewBag.ErrorRegistro</div>
+            }
+
+            <form method="post" asp-controller="Usuario" asp-action="Register" enctype="multipart/form-data">
+                <label>Nombre:</label>
+                <input type="text" name="Nombre" required class="form-control" />
+
+                <label>Apellido:</label>
+                <input type="text" name="Apellido" required class="form-control" />
+
+                <label>Correo:</label>
+                <input type="email" name="Correo" required class="form-control" />
+
+                <label>Teléfono:</label>
+                <input type="text" name="Telefono" required class="form-control" />
+
+                <label>Imagen de Perfil:</label>
+                <input type="file" name="imagenPerfil" class="form-control" accept="image/*" />
+
+                <label>Username:</label>
+                <input type="text" name="Username" required class="form-control" />
+
+                <label>Contraseña:</label>
+                <input type="password" name="Password" required class="form-control" />
+
+                <button type="submit" class="btn btn-success mt-2">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</div>
