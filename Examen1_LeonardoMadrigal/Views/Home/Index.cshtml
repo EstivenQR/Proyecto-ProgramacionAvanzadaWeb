@@ -2,6 +2,7 @@
     ViewData["Title"] = "Home Page";
     Layout = "_LayoutPlantLib";
 }
+<!-- Agregar el estilo aquí para controlar el tamaño de las imágenes -->
 
 <div class="text-center">
 	<!-- Solo mostrar el último libro que se pasó a la vista -->
@@ -25,7 +26,7 @@
 									</div>
 
 								</div><!--banner-content-->
-								<img src="data:image/jpeg;base64,@Convert.ToBase64String(ultimoLibro.ImagenPortada)" alt="banner" class="banner-image">
+								<img src="data:image/jpeg;base64,@Convert.ToBase64String(ultimoLibro.ImagenPortada)" alt="banner" class="banner-image" style="width: 200%; height: 400px; object-fit: contain;">
 							</div><!--slider-item-->
 						</div><!--slider-->
 					</div>
@@ -75,7 +76,7 @@
 								<div class="col-md-3">
 									<div class="product-item">
 										<figure class="product-style">
-											<img src="data:image/jpeg;base64,@Convert.ToBase64String(libro.ImagenPortada)" alt="Books" class="product-item">
+											<img src="data:image/jpeg;base64,@Convert.ToBase64String(libro.ImagenPortada)" alt="Books" class="product-item" style="width: 100%; height: 300px; object-fit: contain;">
 											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">
 												Add to Cart
 											</button>
@@ -127,7 +128,7 @@
 							{
 								var ultimoLibro = ViewBag.UltimoLibro as Examen1_LeonardoMadrigal.Models.Libro;
 								<div class="product-entry">
-								<h2 class="section-title divider">Libro más vendidok</h2>
+								<h2 class="section-title divider">Libro más vendido</h2>
 
 									<div class="products-content">
 										<div class="author-name">By @ultimoLibro.Autor</div>
