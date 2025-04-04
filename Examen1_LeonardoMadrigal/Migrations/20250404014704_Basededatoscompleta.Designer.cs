@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Examen1_LeonardoMadrigal.Migrations
 {
     [DbContext(typeof(ProyectoLibreriaContext))]
-    [Migration("20250318183925_InitialCommit")]
-    partial class InitialCommit
+    [Migration("20250404014704_Basededatoscompleta")]
+    partial class Basededatoscompleta
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -116,8 +116,15 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Property<DateTime>("FechaLanzamiento")
                         .HasColumnType("datetime2");
 
+                    b.Property<byte[]>("ImagenPortada")
+                        .HasColumnType("varbinary(max)");
+
                     b.Property<int>("NotificacionId")
                         .HasColumnType("int");
+
+                    b.Property<decimal>("Precio")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<string>("Sinopsis")
                         .IsRequired()
@@ -226,6 +233,38 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.ToTable("Pedido");
                 });
 
+            modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Prestamo", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<bool>("EstaReservado")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("FechaFin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaInicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("LibroId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("LibroId");
+
+                    b.HasIndex("UsuarioId");
+
+                    b.ToTable("Prestamo");
+                });
+
             modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Rol", b =>
                 {
                     b.Property<int>("Id")
@@ -280,7 +319,6 @@ namespace Examen1_LeonardoMadrigal.Migrations
                         .HasColumnType("int");
 
                     b.Property<byte[]>("RutaImagen")
-                        .IsRequired()
                         .HasColumnType("varbinary(max)");
 
                     b.Property<string>("Telefono")
@@ -394,6 +432,24 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Navigation("Usuario");
                 });
 
+            modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Prestamo", b =>
+                {
+                    b.HasOne("Examen1_LeonardoMadrigal.Models.Libro", "Libro")
+                        .WithMany("Prestamos")
+                        .HasForeignKey("LibroId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Examen1_LeonardoMadrigal.Models.Usuario", "Usuario")
+                        .WithMany("Prestamos")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.Navigation("Libro");
+
+                    b.Navigation("Usuario");
+                });
+
             modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Usuario", b =>
                 {
                     b.HasOne("Examen1_LeonardoMadrigal.Models.Estado", "Estado")
@@ -434,6 +490,8 @@ namespace Examen1_LeonardoMadrigal.Migrations
             modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Libro", b =>
                 {
                     b.Navigation("Pedidos");
+
+                    b.Navigation("Prestamos");
                 });
 
             modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Notificaciones", b =>
@@ -456,6 +514,8 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Navigation("Multas");
 
                     b.Navigation("Pedidos");
+
+                    b.Navigation("Prestamos");
                 });
 #pragma warning restore 612, 618
         }

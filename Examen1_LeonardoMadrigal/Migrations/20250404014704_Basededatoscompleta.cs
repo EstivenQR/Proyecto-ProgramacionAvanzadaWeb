@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Examen1_LeonardoMadrigal.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCommit : Migration
+    public partial class Basededatoscompleta : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -76,6 +76,8 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     FechaLanzamiento = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Editorial = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Sinopsis = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: false),
+                    Precio = table.Column<decimal>(type: "decimal(18,2)", precision: 18, scale: 2, nullable: false),
+                    ImagenPortada = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
                     CategoriaId = table.Column<int>(type: "int", nullable: false),
                     EstadoId = table.Column<int>(type: "int", nullable: false),
                     NotificacionId = table.Column<int>(type: "int", nullable: false)
@@ -113,7 +115,7 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     Apellido = table.Column<string>(type: "nvarchar(70)", maxLength: 70, nullable: false),
                     Correo = table.Column<string>(type: "nvarchar(300)", maxLength: 300, nullable: false),
                     Telefono = table.Column<string>(type: "nvarchar(30)", maxLength: 30, nullable: false),
-                    RutaImagen = table.Column<byte[]>(type: "varbinary(max)", nullable: false),
+                    RutaImagen = table.Column<byte[]>(type: "varbinary(max)", nullable: true),
                     Username = table.Column<string>(type: "nvarchar(120)", maxLength: 120, nullable: false),
                     Password = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     RolId = table.Column<int>(type: "int", nullable: false),
@@ -196,6 +198,35 @@ namespace Examen1_LeonardoMadrigal.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Prestamo",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    LibroId = table.Column<int>(type: "int", nullable: false),
+                    UsuarioId = table.Column<int>(type: "int", nullable: true),
+                    FechaInicio = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    FechaFin = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    EstaReservado = table.Column<bool>(type: "bit", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Prestamo", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Prestamo_Libro_LibroId",
+                        column: x => x.LibroId,
+                        principalTable: "Libro",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Prestamo_Usuario_UsuarioId",
+                        column: x => x.UsuarioId,
+                        principalTable: "Usuario",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Devolucion",
                 columns: table => new
                 {
@@ -273,6 +304,16 @@ namespace Examen1_LeonardoMadrigal.Migrations
                 column: "UsuarioId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Prestamo_LibroId",
+                table: "Prestamo",
+                column: "LibroId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Prestamo_UsuarioId",
+                table: "Prestamo",
+                column: "UsuarioId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Usuario_EstadoId",
                 table: "Usuario",
                 column: "EstadoId");
@@ -291,6 +332,9 @@ namespace Examen1_LeonardoMadrigal.Migrations
 
             migrationBuilder.DropTable(
                 name: "Multa");
+
+            migrationBuilder.DropTable(
+                name: "Prestamo");
 
             migrationBuilder.DropTable(
                 name: "Pedido");

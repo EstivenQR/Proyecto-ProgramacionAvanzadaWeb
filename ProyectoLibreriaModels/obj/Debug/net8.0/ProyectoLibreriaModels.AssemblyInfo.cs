@@ -14,7 +14,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProyectoLibreriaModels")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+553895bcf84e27398cb6e023e43d6ddcaee8f30a")]
+<<<<<<< Updated upstream
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a2aaf164f9e826c51cfafb4180e32fea2f1740b7")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f8884c74af51ea7cdff760626ca3df4b77659e9")]
+>>>>>>> Stashed changes
 [assembly: System.Reflection.AssemblyProductAttribute("ProyectoLibreriaModels")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProyectoLibreriaModels")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

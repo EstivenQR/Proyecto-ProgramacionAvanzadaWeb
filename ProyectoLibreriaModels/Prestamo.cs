@@ -2,15 +2,15 @@
 
 namespace Examen1_LeonardoMadrigal.Models
 {
-        public class Prestamo
-        {
-            public int Id { get; set; }
-            public int LibroId { get; set; }
-            public Libro? Libro { get; set; }
-            public int? UsuarioId { get; set; }
-            public DateTime FechaInicio { get; set; }
-            public DateTime FechaFin { get; set; }
-            public bool EstaReservado { get; set; } = false;
+    public class Prestamo
+    {
+        public int Id { get; set; }
+        public int LibroId { get; set; }
+        public Libro? Libro { get; set; }
+        public int? UsuarioId { get; set; }
+        public DateTime FechaInicio { get; set; }
+        public DateTime FechaFin { get; set; }
+        public bool EstaReservado { get; set; } = false;
 
         //// Relaciones hacia otras tablas
         //// 1.z
@@ -24,6 +24,8 @@ namespace Examen1_LeonardoMadrigal.Models
 
         // Referencia a la tabla de Usuario
         public virtual Usuario Usuario { get; set; }
+
+    
 
 
     }

@@ -2363,7 +2363,6 @@ F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\Examen1_Leonard
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\ref\Examen1_LeonardoMadrigal.dll
 C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\bin\Debug\net8.0\ProyectoLibreriaModels.dll
 C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\bin\Debug\net8.0\ProyectoLibreriaModels.pdb
-C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.csproj.AssemblyReference.cache
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.AssemblyInfoInputs.cache
@@ -2376,6 +2375,8 @@ C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_L
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.dll
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\refint\Examen1_LeonardoMadrigal.dll
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.pdb
+<<<<<<< Updated upstream
+<<<<<<< Updated upstream
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\bin\Debug\net8.0\appsettings.json
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\bin\Debug\net8.0\Examen1_LeonardoMadrigal.staticwebassets.runtime.json
@@ -2628,3 +2629,9 @@ C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\scopedcss
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_.5423E836.Up2Date
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.genruntimeconfig.cache
 C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\ref\Examen1_LeonardoMadrigal.dll
+=======
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+>>>>>>> Stashed changes
+=======
+C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+>>>>>>> Stashed changes
