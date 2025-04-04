@@ -2364,3 +2364,15 @@ F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\Examen1_Leonard
 C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\bin\Debug\net8.0\ProyectoLibreriaModels.dll
 C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\bin\Debug\net8.0\ProyectoLibreriaModels.pdb
 C:\Users\Paula\Documents\GitHub\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.csproj.AssemblyReference.cache
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.AssemblyInfoInputs.cache
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.AssemblyInfo.cs
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.csproj.CoreCompileInputs.cache
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.RazorAssemblyInfo.cache
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.RazorAssemblyInfo.cs
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.sourcelink.json
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.dll
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\refint\Examen1_LeonardoMadrigal.dll
+C:\Users\JOSHUA\Desktop\repo\Examen1_LeonardoMadrigal\obj\Debug\net8.0\Examen1_LeonardoMadrigal.pdb
