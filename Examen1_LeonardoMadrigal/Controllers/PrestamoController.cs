@@ -17,7 +17,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // GET: Prestamo/Index
         public IActionResult Index()
         {
-            var prestamos = _context.Prestamo.Include(p => p.Libro).Include(p => p.Usuario).ToList();
+            var prestamos = _context.Prestamo.ToList();
             return View(prestamos);
         }
 
