@@ -1,5 +1,6 @@
 ﻿using Examen1_LeonardoMadrigal.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace Examen1_LeonardoMadrigal.Controllers
@@ -33,10 +34,11 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // GET: Prestamo/Create
         public IActionResult Create()
         {
-            ViewBag.Libros = _context.Libro.ToList();
-            ViewBag.Usuarios = _context.Usuario.ToList();
+            ViewData["LibrosId"] = new SelectList(_context.Estado, "Id", "Nombre");
             return View();
         }
+
+
 
         // POST: Prestamo/Create
         [HttpPost]
@@ -50,8 +52,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewBag.Libros = _context.Libro.ToList();
-            ViewBag.Usuarios = _context.Usuario.ToList();
+            ViewData["LibrosId"] = new SelectList(_context.Libro, "Id", "Nombre");
             return View(prestamo);
         }
 
