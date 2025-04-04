@@ -32,13 +32,11 @@ namespace Examen1_LeonardoMadrigal.Controllers
         }
 
         // GET: Prestamo/Create
-        public IActionResult Create()
+        public IActionResult Create(int? libroId)
         {
-            ViewData["LibrosId"] = new SelectList(_context.Estado, "Id", "Nombre");
+            ViewBag.LibroId = new SelectList(_context.Libro, "Id", "Titulo", libroId);
             return View();
         }
-
-
 
         // POST: Prestamo/Create
         [HttpPost]
