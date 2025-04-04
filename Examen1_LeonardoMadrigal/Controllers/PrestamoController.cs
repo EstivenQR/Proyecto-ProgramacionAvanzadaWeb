@@ -45,14 +45,36 @@ namespace Examen1_LeonardoMadrigal.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Obtener el libro asociado
+                var libro = _context.Libro.FirstOrDefault(l => l.Id == prestamo.LibroId);
+                if (libro == null)
+                {
+                    ModelState.AddModelError("", "El libro seleccionado no existe.");
+                    return View(prestamo);
+                }
+
+                // Validar stock
+                if (libro.Stock <= 0)
+                {
+                    ModelState.AddModelError("", "No hay stock disponible para este libro.");
+                    ViewBag.LibroId = new SelectList(_context.Libro, "Id", "Titulo", prestamo.LibroId);
+                    return View(prestamo);
+                }
+
+                // Reducir el stock
+                libro.Stock -= 1;
+
+                // Guardar el préstamo
                 _context.Prestamo.Add(prestamo);
                 _context.SaveChanges();
+
                 return RedirectToAction(nameof(Index));
             }
 
-            ViewData["LibrosId"] = new SelectList(_context.Libro, "Id", "Nombre");
+            ViewBag.LibroId = new SelectList(_context.Libro, "Id", "Titulo", prestamo.LibroId);
             return View(prestamo);
         }
+
 
         // GET: Prestamo/Edit/5
         public IActionResult Edit(int id)
