@@ -74,5 +74,27 @@ namespace Examen1_LeonardoMadrigal.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult ReducirStock(int id)
+        {
+            var libro = _context.Libro.FirstOrDefault(l => l.Id == id);
+
+            if (libro == null)
+            {
+                return NotFound();
+            }
+
+            if (libro.Stock > 0)
+            {
+                libro.Stock -= 1;
+                _context.SaveChanges();
+                return Ok();
+            }
+            else
+            {
+                return BadRequest("Stock agotado");
+            }
+        }
     }
 }

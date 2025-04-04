@@ -2,412 +2,145 @@
     ViewData["Title"] = "Home Page";
     Layout = "_LayoutPlantLib";
 }
-<!-- Agregar el estilo aquí para controlar el tamaño de las imágenes -->
 
 <div class="text-center">
-	<!-- Solo mostrar el último libro que se pasó a la vista -->
-	@if (ViewBag.UltimoLibro != null)
-	{
-		var ultimoLibro = ViewBag.UltimoLibro as Examen1_LeonardoMadrigal.Models.Libro;
-		<section id="billboard">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="main-slider pattern-overlay">
-							<div class="slider-item">
-								<div class="banner-content">
-									<h2 class="banner-title">@ultimoLibro.Titulo</h2>
-									<p>@ultimoLibro.Sinopsis</p>
+    @if (ViewBag.UltimoLibro != null)
+    {
+        var ultimoLibro = ViewBag.UltimoLibro as Examen1_LeonardoMadrigal.Models.Libro;
+        <section id="billboard">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-slider pattern-overlay">
+                            <div class="slider-item">
+                                <div class="banner-content">
+                                    <h2 class="banner-title">@ultimoLibro.Titulo</h2>
+                                    <p>@ultimoLibro.Sinopsis</p>
+                                    <div class="btn-wrap">
+                                        <a href="@Url.Action("Details", "Home", new { id = ViewBag.UltimoLibro.Id })" class="btn btn-outline-accent btn-accent-arrow">
+                                            Leer Más <i class="icon icon-ns-arrow-right"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <img src="data:image/jpeg;base64,@Convert.ToBase64String(ultimoLibro.ImagenPortada)" alt="banner" class="banner-image" style="width: 200%; height: 400px; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    }
 
-									<div class="btn-wrap">
-										<a href="@Url.Action("Details", "Home", new { id = ViewBag.UltimoLibro.Id })" class="btn btn-outline-accent btn-accent-arrow">
-											Leer Más <i class="icon icon-ns-arrow-right"></i>
-										</a>
-									</div>
+    <section id="client-holder" data-aos="fade-up">
+        <div class="container">
+            <div class="row">
+                <div class="inner-content">
+                    <div class="logo-wrap">
+                        <div class="grid">
+                            <a href="#"><img src="~/PlantLib/images/client-image1.png" alt="client"></a>
+                            <a href="#"><img src="~/PlantLib/images/client-image2.png" alt="client"></a>
+                            <a href="#"><img src="~/PlantLib/images/client-image3.png" alt="client"></a>
+                            <a href="#"><img src="~/PlantLib/images/client-image4.png" alt="client"></a>
+                            <a href="#"><img src="~/PlantLib/images/client-image5.png" alt="client"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-								</div><!--banner-content-->
-								<img src="data:image/jpeg;base64,@Convert.ToBase64String(ultimoLibro.ImagenPortada)" alt="banner" class="banner-image" style="width: 200%; height: 400px; object-fit: contain;">
-							</div><!--slider-item-->
-						</div><!--slider-->
-					</div>
-				</div>
-			</div>
-		</section>
-	}
+    <!--TODOS LOS LIBROS-->
+    <section id="featured-books" class="py-5 my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-header align-center">
+                        <div class="title">
+                            <span>Some quality items</span>
+                        </div>
+                        <h2 class="section-title">Libros Destacados</h2>
+                    </div>
+                    <div class="product-list" data-aos="fade-up">
+                        <div class="row">
+                            @foreach (var libro in Model)
+                            {
+                                <div class="col-md-3">
+                                    <div class="product-item">
+                                        <figure class="product-style">
+                                            <img src="data:image/jpeg;base64,@Convert.ToBase64String(libro.ImagenPortada)" alt="Books" class="product-item" style="width: 100%; height: 300px; object-fit: contain;">
+                                            <button type="button" class="add-to-cart" data-id="@libro.Id" data-product-tile="add-to-cart">
+                                                Add to Cart
+                                            </button>
+                                        </figure>
+                                        <figcaption>
+                                            <h3>@libro.Titulo</h3>
+                                            <span>@libro.Autor</span>
+                                            <div class="item-price">$ @libro.Precio</div>
+                                            <div class="item-stock">Stock: <span class="stock-value">@libro.Stock</span></div>
+                                        </figcaption>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="@Url.Action("AllBooks", "Home")" class="btn btn-outline-accent btn-accent-arrow">
+                Ver Todos Los Productos <i class="icon icon-ns-arrow-right"></i>
+            </a>
+        </div>
+    </section>
 
-	<section id="client-holder" data-aos="fade-up">
-		<div class="container">
-			<div class="row">
-				<div class="inner-content">
-					<div class="logo-wrap">
-						<div class="grid">
-							<a href="#"><img src="~/PlantLib/images/client-image1.png" alt="client"></a>
-							<a href="#"><img src="~/PlantLib/images/client-image2.png" alt="client"></a>
-							<a href="#"><img src="~/PlantLib/images/client-image3.png" alt="client"></a>
-							<a href="#"><img src="~/PlantLib/images/client-image4.png" alt="client"></a>
-							<a href="#"><img src="~/PlantLib/images/client-image5.png" alt="client"></a>
-						</div>
-					</div><!--image-holder-->
-				</div>
-			</div>
-		</div>
-	</section>
+    <!--Mejor Libro-->
+    <section id="best-selling" class="leaf-pattern-overlay">
+        <div class="corner-pattern-overlay"></div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="row">
+                        <div class="col-md-6">
+                            @if (ViewBag.UltimoLibro != null)
+                            {
+                                var ultimoLibro = ViewBag.UltimoLibro as Examen1_LeonardoMadrigal.Models.Libro;
+                                <figure class="products-thumb">
+                                    <img src="data:image/jpeg;base64,@Convert.ToBase64String(ultimoLibro.ImagenPortada)" alt="book" class="single-image">
+                                </figure>
+                            }
+                        </div>
+                        <div class="col-md-6">
+                            @if (ViewBag.UltimoLibro != null)
+                            {
+                                var ultimoLibro = ViewBag.UltimoLibro as Examen1_LeonardoMadrigal.Models.Libro;
+                                <div class="product-entry">
+                                    <h2 class="section-title divider">Libro más vendido</h2>
+                                    <div class="products-content">
+                                        <div class="author-name">By @ultimoLibro.Autor</div>
+                                        <h3 class="item-title">@ultimoLibro.Titulo</h3>
+                                        <p>@ultimoLibro.Sinopsis</p>
+                                        <div class="item-price">$ @ultimoLibro.Precio</div>
+                                        <div class="btn-wrap">
+                                            <a href="#" class="btn-accent-arrow">
+                                                comprar ahora <i class="icon icon-ns-arrow-right"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-
-	
-	
-	<!--TODOS LOS LIBROS-->
-	<!-- Sección Featured Books: Mostrar todos los libros -->
-	<section id="featured-books" class="py-5 my-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<div class="section-header align-center">
-						<div class="title">
-							<span>Some quality items</span>
-						</div>
-						<h2 class="section-title">Libros Destacados</h2>
-					</div>
-
-					<div class="product-list" data-aos="fade-up">
-						<div class="row">
-							@foreach (var libro in Model)
-							{
-								<div class="col-md-3">
-									<div class="product-item">
-										<figure class="product-style">
-											<img src="data:image/jpeg;base64,@Convert.ToBase64String(libro.ImagenPortada)" alt="Books" class="product-item" style="width: 100%; height: 300px; object-fit: contain;">
-											<button type="button" class="add-to-cart" data-product-tile="add-to-cart">
-												Add to Cart
-											</button>
-										</figure>
-										<figcaption>
-											<h3>@libro.Titulo</h3>
-											<span>@libro.Autor</span>
-											<div class="item-price">$ @libro.Precio</div>
-										</figcaption>
-									</div>
-								</div>
-							}
-						</div><!--ft-books-slider-->
-					</div><!--grid-->
-				</div><!--inner-content-->
-			</div>
-		</div>
-
-
-		<a href="@Url.Action("AllBooks", "Home")" class="btn btn-outline-accent btn-accent-arrow">
-			Ver Todos Los Productos <i class="icon icon-ns-arrow-right"></i>
-		</a>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	<!--Mejor Libro por asi decirlo-->
-	<section id="best-selling" class="leaf-pattern-overlay">
-		<div class="corner-pattern-overlay"></div>
-		<div class="container">
-			<div class="row justify-content-center">
-				<div class="col-md-8">
-					<div class="row">
-						<div class="col-md-6">
-							@if (ViewBag.UltimoLibro != null)
-							{
-								var ultimoLibro = ViewBag.UltimoLibro as Examen1_LeonardoMadrigal.Models.Libro;
-								<figure class="products-thumb">
-									<img src="data:image/jpeg;base64,@Convert.ToBase64String(ultimoLibro.ImagenPortada)" alt="book" class="single-image">
-								</figure>
-							}
-						</div>
-
-						<div class="col-md-6">
-							@if (ViewBag.UltimoLibro != null)
-							{
-								var ultimoLibro = ViewBag.UltimoLibro as Examen1_LeonardoMadrigal.Models.Libro;
-								<div class="product-entry">
-								<h2 class="section-title divider">Libro más vendido</h2>
-
-									<div class="products-content">
-										<div class="author-name">By @ultimoLibro.Autor</div>
-										<h3 class="item-title">@ultimoLibro.Titulo</h3>
-										<p>
-											@ultimoLibro.Sinopsis
-										</p>
-										<div class="item-price">$ @ultimoLibro.Precio</div>
-										<div class="btn-wrap">
-											<a href="#" class="btn-accent-arrow">
-												comprar ahora <i class="icon icon-ns-arrow-right"></i>
-											</a>
-										</div>
-									</div>
-								</div>
-							}
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-
-	
-
-	<!--Frases-->
-	<section id="quotation" class="align-center pb-5 mb-5">
-		<div class="inner-content">
-		<h2 class="section-title divider">Cita del día</h2>
-			<blockquote data-aos="fade-up">
-				<q>
-				“Cuanto más leas, más cosas sabrás. Cuanto más aprendas, a más lugares irás..”
-				</q>
-				<div class="author-name">Dr. Seuss</div>
-			</blockquote>
-		</div>
-	</section>
-
-
-	<!--OFERTAS opcional-->
-	<section id="special-offer" class="bookshelf pb-5 mb-5">
-
-		<div class="section-header align-center">
-			<div class="title">
-				<span>Grab your opportunity</span>
-			</div>
-			<h2 class="section-title">Libros en Oferta</h2>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="inner-content">
-					<div class="product-list" data-aos="fade-up">
-						<div class="grid product-grid">
-							<div class="product-item">
-								<figure class="product-style">
-									<img src="~/PlantLib/images/product-item5.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">
-										Add to
-										Cart
-									</button>
-								</figure>
-								<figcaption>
-									<h3>Simple way of piece life</h3>
-									<span>Armor Ramsey</span>
-									<div class="item-price">
-										<span class="prev-price">$ 50.00</span>$ 40.00
-									</div>
-							</div>
-							</figcaption>
-
-							<div class="product-item">
-								<figure class="product-style">
-									<img src="~/PlantLib/images/product-item6.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">
-										Add to
-										Cart
-									</button>
-								</figure>
-								<figcaption>
-									<h3>Great travel at desert</h3>
-									<span>Sanchit Howdy</span>
-									<div class="item-price">
-										<span class="prev-price">$ 30.00</span>$ 38.00
-									</div>
-							</div>
-							</figcaption>
-
-							<div class="product-item">
-								<figure class="product-style">
-									<img src="~/PlantLib/images/product-item7.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">
-										Add to
-										Cart
-									</button>
-								</figure>
-								<figcaption>
-									<h3>The lady beauty Scarlett</h3>
-									<span>Arthur Doyle</span>
-									<div class="item-price">
-										<span class="prev-price">$ 35.00</span>$ 45.00
-									</div>
-							</div>
-							</figcaption>
-
-							<div class="product-item">
-								<figure class="product-style">
-									<img src="~/PlantLib/images/product-item8.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">
-										Add to
-										Cart
-									</button>
-								</figure>
-								<figcaption>
-									<h3>Once upon a time</h3>
-									<span>Klien Marry</span>
-									<div class="item-price">
-										<span class="prev-price">$ 25.00</span>$ 35.00
-									</div>
-							</div>
-							</figcaption>
-
-							<div class="product-item">
-								<figure class="product-style">
-									<img src="~/PlantLib/images/product-item2.jpg" alt="Books" class="product-item">
-									<button type="button" class="add-to-cart" data-product-tile="add-to-cart">
-										Add to
-										Cart
-									</button>
-								</figure>
-								<figcaption>
-									<h3>Simple way of piece life</h3>
-									<span>Armor Ramsey</span>
-									<div class="item-price">$ 40.00</div>
-								</figcaption>
-							</div>
-						</div><!--grid-->
-					</div>
-				</div><!--inner-content-->
-			</div>
-		</div>
-	</section>
-
-	
-
-
-	<!--Seccion de Noticias OPCIONAL -->
-	<section id="latest-blog" class="py-5 my-5">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-
-					<div class="section-header align-center">
-						<div class="title">
-							<span>Read our articles</span>
-						</div>
-						<h2 class="section-title">Latest Articles</h2>
-					</div>
-
-					<div class="row">
-
-						<div class="col-md-4">
-
-							<article class="column" data-aos="fade-up">
-
-								<figure>
-									<a href="#" class="image-hvr-effect">
-										<img src="~/PlantLib/images/post-img1.jpg" alt="post" class="post-image">
-									</a>
-								</figure>
-
-								<div class="post-item">
-									<div class="meta-date">Mar 30, 2021</div>
-									<h3><a href="#">Reading books always makes the moments happy</a></h3>
-
-									<div class="links-element">
-										<div class="categories">inspiration</div>
-										<div class="social-links">
-											<ul>
-												<li>
-													<a href="#"><i class="icon icon-facebook"></i></a>
-												</li>
-												<li>
-													<a href="#"><i class="icon icon-twitter"></i></a>
-												</li>
-												<li>
-													<a href="#"><i class="icon icon-behance-square"></i></a>
-												</li>
-											</ul>
-										</div>
-									</div><!--links-element-->
-
-								</div>
-							</article>
-
-						</div>
-						<div class="col-md-4">
-
-							<article class="column" data-aos="fade-up" data-aos-delay="200">
-								<figure>
-									<a href="#" class="image-hvr-effect">
-										<img src="~/PlantLib/images/post-img2.jpg" alt="post" class="post-image">
-									</a>
-								</figure>
-								<div class="post-item">
-									<div class="meta-date">Mar 29, 2021</div>
-									<h3><a href="#">Reading books always makes the moments happy</a></h3>
-
-									<div class="links-element">
-										<div class="categories">inspiration</div>
-										<div class="social-links">
-											<ul>
-												<li>
-													<a href="#"><i class="icon icon-facebook"></i></a>
-												</li>
-												<li>
-													<a href="#"><i class="icon icon-twitter"></i></a>
-												</li>
-												<li>
-													<a href="#"><i class="icon icon-behance-square"></i></a>
-												</li>
-											</ul>
-										</div>
-									</div><!--links-element-->
-
-								</div>
-							</article>
-
-						</div>
-						<div class="col-md-4">
-
-							<article class="column" data-aos="fade-up" data-aos-delay="400">
-								<figure>
-									<a href="#" class="image-hvr-effect">
-										<img src="~/PlantLib/images/post-img3.jpg" alt="post" class="post-image">
-									</a>
-								</figure>
-								<div class="post-item">
-									<div class="meta-date">Feb 27, 2021</div>
-									<h3><a href="#">Reading books always makes the moments happy</a></h3>
-
-									<div class="links-element">
-										<div class="categories">inspiration</div>
-										<div class="social-links">
-											<ul>
-												<li>
-													<a href="#"><i class="icon icon-facebook"></i></a>
-												</li>
-												<li>
-													<a href="#"><i class="icon icon-twitter"></i></a>
-												</li>
-												<li>
-													<a href="#"><i class="icon icon-behance-square"></i></a>
-												</li>
-											</ul>
-										</div>
-									</div><!--links-element-->
-
-								</div>
-							</article>
-
-						</div>
-
-					</div>
-
-					<div class="row">
-
-						<div class="btn-wrap align-center">
-							<a href="#" class="btn btn-outline-accent btn-accent-arrow" tabindex="0">
-								Read All Articles<i class="icon icon-ns-arrow-right"></i>
-							</a>
-						</div>
-					</div>
-
-				</div>
-			</div>
-		</div>
-	</section>
-
-	
+    <!--Frase-->
+    <section id="quotation" class="align-center pb-5 mb-5">
+        <div class="inner-content">
+            <h2 class="section-title divider">Cita del día</h2>
+            <blockquote data-aos="fade-up">
+                <q>“Cuanto más leas, más cosas sabrás. Cuanto más aprendas, a más lugares irás.”</q>
+                <div class="author-name">Dr. Seuss</div>
+            </blockquote>
+        </div>
+    </section>
 </div>
