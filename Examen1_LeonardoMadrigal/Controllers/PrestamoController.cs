@@ -35,9 +35,18 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // GET: Prestamo/Create
         public IActionResult Create(int? libroId)
         {
+            var usuarioId = HttpContext.Session.GetInt32("UsuarioId");
+            if (usuarioId == null)
+            {
+                return RedirectToAction("Login", "Usuario");
+            }
+
             ViewBag.LibroId = new SelectList(_context.Libro, "Id", "Titulo", libroId);
+            ViewBag.UsuarioId = usuarioId.Value; 
+
             return View();
         }
+
 
         // POST: Prestamo/Create
         [HttpPost]
