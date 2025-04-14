@@ -7616,24 +7616,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Paula\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\leona\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
+      "projectUniqueName": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
       "projectName": "Examen1_LeonardoMadrigal",
-      "projectPath": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
-      "packagesPath": "C:\\Users\\Paula\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\obj\\",
+      "projectPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
+      "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
+      "outputPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Paula\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7641,14 +7636,15 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
-              "projectPath": "C:\\Users\\Paula\\Documents\\GitHub\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj"
+            "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
+              "projectPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj"
             }
           }
         }
@@ -7662,8 +7658,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.200"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -7705,24 +7700,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.14, 8.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.14, 8.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -7731,7 +7708,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

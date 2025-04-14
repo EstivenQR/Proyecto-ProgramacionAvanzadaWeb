@@ -9,15 +9,21 @@
 
         // Relaciones con otras tablas
         // 1.
-        public int PedidoId { get; set; } // Referencia a la tabla de Pedido
+        public int PrestamoId { get; set; } // Referencia a la tabla de Prestamo
 
-        // Referencia a la tabla de Pedido
-        public Pedido? Pedido { get; set; }
+        // Referencia a la tabla de Prestamo
+        public Prestamo? Prestamo { get; set; }
 
         // 2.
         public int EstadoId { get; set; } // Referencia a la tabla de Estado
 
         // Referencia a la tabla de Estado
         public Estado? Estado { get; set; }
+
+        // 3.
+        public int UsuarioId { get; set; } // Referencia a la tabla de Usuario
+
+        // Referencia a la tabla de Usuario
+        public Usuario? Usuario { get; set; }
     }
 }

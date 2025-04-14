@@ -57,14 +57,19 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Property<DateTime>("FechaCaducidad")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("PedidoId")
+                    b.Property<int>("PrestamoId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UsuarioId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("EstadoId");
 
-                    b.HasIndex("PedidoId");
+                    b.HasIndex("PrestamoId");
+
+                    b.HasIndex("UsuarioId");
 
                     b.ToTable("Devolucion");
                 });
@@ -345,15 +350,23 @@ namespace Examen1_LeonardoMadrigal.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Examen1_LeonardoMadrigal.Models.Pedido", "Pedido")
+                    b.HasOne("Examen1_LeonardoMadrigal.Models.Prestamo", "Prestamo")
                         .WithMany("Devoluciones")
-                        .HasForeignKey("PedidoId")
+                        .HasForeignKey("PrestamoId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("Examen1_LeonardoMadrigal.Models.Usuario", "Usuario")
+                        .WithMany("Devoluciones")
+                        .HasForeignKey("UsuarioId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
                     b.Navigation("Estado");
 
-                    b.Navigation("Pedido");
+                    b.Navigation("Prestamo");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Libro", b =>
@@ -496,7 +509,7 @@ namespace Examen1_LeonardoMadrigal.Migrations
                     b.Navigation("Libros");
                 });
 
-            modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Pedido", b =>
+            modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Prestamo", b =>
                 {
                     b.Navigation("Devoluciones");
                 });
@@ -508,6 +521,8 @@ namespace Examen1_LeonardoMadrigal.Migrations
 
             modelBuilder.Entity("Examen1_LeonardoMadrigal.Models.Usuario", b =>
                 {
+                    b.Navigation("Devoluciones");
+
                     b.Navigation("Multas");
 
                     b.Navigation("Pedidos");
