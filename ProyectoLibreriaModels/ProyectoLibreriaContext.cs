@@ -122,8 +122,9 @@ namespace Examen1_LeonardoMadrigal.Models
             modelBuilder.Entity<Pedido>().HasOne(p => p.Estado).WithMany(e => e.Pedidos).HasForeignKey(p => p.EstadoId);
 
             // Configuración de la tabla Devolucion
-            modelBuilder.Entity<Devolucion>().HasOne(d => d.Pedido).WithMany(p => p.Devoluciones).HasForeignKey(d => d.PedidoId).OnDelete(DeleteBehavior.NoAction);
+            modelBuilder.Entity<Devolucion>().HasOne(d => d.Prestamo).WithMany(p => p.Devoluciones).HasForeignKey(d => d.PrestamoId).OnDelete(DeleteBehavior.NoAction);
             modelBuilder.Entity<Devolucion>().HasOne(d => d.Estado).WithMany(e => e.Devoluciones).HasForeignKey(d => d.EstadoId);
+            modelBuilder.Entity<Devolucion>().HasOne(d => d.Usuario).WithMany(e => e.Devoluciones).HasForeignKey(d => d.UsuarioId).OnDelete(DeleteBehavior.NoAction);
 
             // Configuración de la tabla Multa
             modelBuilder.Entity<Multa>().HasOne(m => m.Usuario).WithMany(u => u.Multas).HasForeignKey(m => m.UsuarioId).OnDelete(DeleteBehavior.NoAction);

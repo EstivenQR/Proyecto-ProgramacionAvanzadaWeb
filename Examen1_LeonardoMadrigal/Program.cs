@@ -47,8 +47,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
-// **¡Mueve UseSession aquí!**
-app.UseSession(); // Ahora sí se ejecutará correctamente
+app.UseSession(); 
 
 app.UseAuthentication();
 app.UseAuthorization();

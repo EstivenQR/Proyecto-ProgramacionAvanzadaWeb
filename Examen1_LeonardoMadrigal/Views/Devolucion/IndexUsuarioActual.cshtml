@@ -1,0 +1,106 @@
+@model DevolucionPrestamoUsuario_ViewModel
+
+@{
+    //Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Libro
+                </th>
+                <th>
+                    Fecha de Inicio
+                </th>
+                <th>
+                    Fecha Fin
+                </th>
+                <th>
+                    Esta Reservado
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var prestamo in Model.Prestamos)
+            {
+                <tr>
+                    <td>
+                        @prestamo.Id
+                    </td>
+                    <td>
+                        @prestamo.FechaInicio
+                    </td>
+                    <td>
+                        @prestamo.FechaFin
+                    </td>
+                    <td>
+                        @prestamo.EstaReservado
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+@* <p>
+    <a asp-action="Create">Create New</a>
+</p> *@
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                FechaCaducidad
+            </th>
+            <th>
+                EstadoLibro
+            </th>
+            <th>
+                Prestamo
+            </th>
+            <th>
+                Estado
+            </th>
+            <th>
+                Usuario
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var devolucion in Model.Devoluciones) {
+        <tr>
+            <td>
+                @devolucion.FechaCaducidad
+            </td>
+            <td>
+                @devolucion.EstadoLibro
+            </td>
+            <td>
+                @devolucion.Prestamo.Id
+            </td>
+            <td>
+                @devolucion.Estado.Nombre
+            </td>
+            <td>
+                @devolucion.Usuario.Username)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+
+
+</body>
+</html>

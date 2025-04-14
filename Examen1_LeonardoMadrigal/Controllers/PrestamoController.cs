@@ -36,10 +36,10 @@ namespace Examen1_LeonardoMadrigal.Controllers
         public IActionResult Create(int? libroId)
         {
             var usuarioId = HttpContext.Session.GetInt32("UsuarioId");
-            if (usuarioId == null)
-            {
-                return RedirectToAction("Login", "Usuario");
-            }
+            //if (usuarioId == null)
+            //{
+            //    return RedirectToAction("Login", "Usuario");
+            //}
 
             ViewBag.LibroId = new SelectList(_context.Libro, "Id", "Titulo", libroId);
             ViewBag.UsuarioId = usuarioId.Value; 

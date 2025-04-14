@@ -12,6 +12,7 @@ using System.Security.Claims;
 
 namespace Examen1_LeonardoMadrigal.Controllers
 {
+    [Authorize]
     public class UsuarioController : Controller
     {
         private readonly ProyectoLibreriaContext _context;
@@ -29,7 +30,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
         }
 
         // GET: Usuario/Details/5
-        [Authorize(Roles = "2")]
+        //[Authorize(Roles = "2")]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -210,10 +211,10 @@ namespace Examen1_LeonardoMadrigal.Controllers
                 if (usuario != null)
                 {
                     var claims = new List<Claim>
-            {
-                new Claim(ClaimTypes.Name, usuario.Username),
-                new Claim(ClaimTypes.Role, usuario.RolId.ToString()) // Asegurar que el rol sea un string
-            };
+    {
+        new Claim(ClaimTypes.Name, usuario.Username),
+        new Claim(ClaimTypes.Role, usuario.RolId.ToString()) // Asegurar que el rol sea un string
+    };
 
                     var claimsIdentity = new ClaimsIdentity(claims, "CookieAuth");
                     var authProperties = new AuthenticationProperties
@@ -231,6 +232,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             return View();
         }
 
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Register(Usuario usuario, IFormFile imagenPerfil)
@@ -243,8 +245,8 @@ namespace Examen1_LeonardoMadrigal.Controllers
             }
 
             // Se asignan valores predeterminados
-            usuario.RolId = 1; 
-            usuario.EstadoId = 1; 
+            usuario.RolId = 1;
+            usuario.EstadoId = 1;
 
             // Procesar la imagen si se sube un archivo
             if (imagenPerfil != null && imagenPerfil.Length > 0)
@@ -258,7 +260,6 @@ namespace Examen1_LeonardoMadrigal.Controllers
 
             _context.Add(usuario);
             await _context.SaveChangesAsync();
-
             ViewBag.MensajeRegistro = "Registro exitoso, ahora puedes iniciar sesión.";
             return View("Login"); // Se retorna a la misma vista de login con mensaje de éxito
         }
@@ -266,8 +267,10 @@ namespace Examen1_LeonardoMadrigal.Controllers
 
 
 
-        public IActionResult Logout()
+
+        public async Task<IActionResult> Logout()
         {
+            await HttpContext.SignOutAsync("CookieAuth");
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
         }

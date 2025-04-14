@@ -21,6 +21,13 @@
 			</div>
 			<div class="col-md-6">
 				<div class="right-element">
+					@if (User.Identity.IsAuthenticated)
+						{
+							<p>Bienvenido, @User.Identity.Name</p>
+						} else {
+							<p>Bienvenido, invitado</p>
+						}
+
 					<a asp-area="" asp-controller="Usuario" asp-action="Login" class="user-account for-buy">
 						<i class="icon icon-user"></i>
 						<span>Cuenta</span>
@@ -105,6 +112,11 @@
 							<!-- 5. -->
 							<li class="menu-item">
 								<a class="nav-link" asp-area="" asp-controller="Libro" asp-action="Index">Libros</a>
+							</li>
+
+							<!-- 6. -->
+							<li class="menu-item">
+								<a class="nav-link" asp-area="" asp-controller="Devolucion" asp-action="IndexUsuarioActual">Devolucion</a>
 							</li>
 
 

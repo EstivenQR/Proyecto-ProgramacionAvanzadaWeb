@@ -25,7 +25,9 @@ namespace Examen1_LeonardoMadrigal.Models
         // Referencia a la tabla de Usuario
         public virtual Usuario Usuario { get; set; }
 
-    
+        public IEnumerable<Devolucion>? Devoluciones { get; set; }
+
+
 
 
     }
