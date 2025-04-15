@@ -42,7 +42,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             // Filtrar las devoluciones por el ID del usuario actual
             var prestamosContext = _context.Prestamo
                 .Include(d => d.Usuario)
-                .Where(d => d.Usuario.Username == userId);
+                .Where(d => d.Usuario.Username == userId && d.EstaReservado == true);
 
             var viewModel = new DevolucionPrestamoUsuario_ViewModel
             {
@@ -103,50 +103,111 @@ namespace Examen1_LeonardoMadrigal.Controllers
         }
 
         // GET: Devolucion/Create
-        public IActionResult CreateUsuarioActual()
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> CreateUsuarioActual(int prestamoId)
         {
-            //var userId = User.Identity.Name;
-            ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre");
-            ViewData["PrestamoId"] = new SelectList(_context.Prestamo, "Id", "Id");
-            //ViewData["UsuarioId"] = new SelectList(_context.Usuario, "Id", "Apellido");
-            return View();
+            // 1. Obtener el usuario actual
+            var userId = User.Identity.Name;
+            var usuario = await _context.Usuario.FirstOrDefaultAsync(u => u.Username == userId);
+            if (usuario == null)
+            {
+                return NotFound("Usuario no encontrado");
+            }
+
+            // 2. Obtener el préstamo
+            var prestamo = await _context.Prestamo.Include(p => p.Libro).FirstOrDefaultAsync(p => p.Id == prestamoId);
+            if (prestamo == null)
+            {
+                return NotFound("Préstamo no encontrado");
+            }
+
+            // 2.1 Actualizar estado del préstamo
+            prestamo.EstaReservado = false;
+
+            // 3. Crear la devolución
+            var devolucion = new Devolucion
+            {
+                FechaCaducidad = DateTime.Now,
+                EstadoLibro = true, // Puedes ajustar esto según lógica real
+                PrestamoId = prestamo.Id,
+                EstadoId = 2, // Estado de devolución "activo"
+                UsuarioId = usuario.Id
+            };
+
+            // 4. Se coloca el EstadoId de la tabla libro a 1 (es decir que SI se devolvio el libro) y se suma el stock +1 para que el libro vuelva a estar disponible
+            var libro = prestamo.Libro;
+            if (libro != null)
+            {
+                libro.EstadoId = 1; // Activo
+                libro.Stock += 1;
+            }
+
+            // Guardar cambios
+            _context.Devolucion.Add(devolucion);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(IndexUsuarioActual));
         }
+
 
         // POST: Devolucion/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> CreateUsuarioActual([Bind("Id,FechaCaducidad,EstadoLibro,PrestamoId,EstadoId")] Devolucion devolucion)
-        {
-            // En este metodo, cuando el usuario seleccione el prestamo de libro que quiere devolver, se devolvera el libro creando una devolucion
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public async Task<IActionResult> CreateUsuarioActual([Bind("Id,FechaCaducidad,EstadoLibro,PrestamoId,EstadoId")] Devolucion devolucion)
+        //{
+        //    // En este metodo, cuando el usuario seleccione el prestamo de libro que quiere devolver, se devolvera el libro creando una devolucion
 
-            // 1. Se obtiene el usuario actual
-            var userId = User.Identity.Name;
-            var usuario = await _context.Usuario.FirstOrDefaultAsync(u => u.Username == userId);
-            if (usuario != null)
-            {
-                return NotFound("Usuario no encontrado");
-            }
-            devolucion.UsuarioId = usuario.Id; // Asignar el usuario actual
-            // 2. Se obtiene el prestamo seleccionado
+        //    // 1. Se obtiene el usuario actual
+        //    var userId = User.Identity.Name;
+        //    var usuario = await _context.Usuario.FirstOrDefaultAsync(u => u.Username == userId);
+        //    if (usuario == null)
+        //    {
+        //        return NotFound("Usuario no encontrado");
+        //    }
+        //        // 1.1 Se asigna el id del usuario actual a la devolucion
+        //        devolucion.UsuarioId = usuario.Id; // Asignar el usuario actual
+        //    // 2. Se obtiene el prestamo seleccionado
+        //    var prestamo = await _context.Prestamo.FindAsync(devolucion.Prestamo);
+        //    if (prestamo == null)
+        //    {
+        //        return NotFound("Prestamo no encontrado");
+        //    }
+        //        // 2.1 Se pasa el atributo EstaRservado de la tabla prestamo a false (osea que ya no esta reservado)
+        //        prestamo.EstaReservado = false; // Asignar el estado de la devolucion a inactivo (es decir que SI se devolvio el libro)
 
+        //    // 3. Se coloca el estado de la devolucion a activo (es decir que SI se devolvio el libro)
+        //    devolucion.EstadoId = 2; // Asignar el estado de la devolucion a inactivo (es decir que SI se devolvio el libro)
 
+        //    // 4. Se obtiene el libro del prestamo 
+        //    var libro = await _context.Libro.FindAsync(prestamo.LibroId);
 
-            // 3. Se coloca el estado de la devolucion a inactivo (es decir que SI se devolvio el libro)
-            devolucion.EstadoId = 2; // Asignar el estado de la devolucion a inactivo (es decir que SI se devolvio el libro)
+        //    // 4.1 Se coloca el EstadoId de la tabla libro a 1 (es decir que SI se devolvio el libro) y se suma el stock +1 para que el libro vuelva a estar disponible
 
-            if (ModelState.IsValid)
-            {
-                _context.Add(devolucion);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre", devolucion.EstadoId);
-            ViewData["PrestamoId"] = new SelectList(_context.Prestamo, "Id", "Id", devolucion.PrestamoId);
-            ViewData["UsuarioId"] = new SelectList(_context.Usuario, "Id", "Apellido", devolucion.UsuarioId);
-            return View(devolucion);
-        }
+        //        if (libro != null)
+        //            {
+        //                libro.EstadoId = 1; // Se asigna el estado de la devolucion a inactivo (es decir que SI se devolvio el libro)
+        //                libro.Stock += 1; // Se aumenta el stock del libro
+        //        }
+
+        //    // 5. Se coloca la fecha actual a la fecha de caducidad de la devolucion
+        //    devolucion.FechaCaducidad = DateTime.Now; 
+
+        //    if (ModelState.IsValid)
+        //    {
+        //        _context.Update(prestamo);
+        //        _context.Update(libro);
+        //        _context.Add(devolucion);
+        //        await _context.SaveChangesAsync();
+        //        return RedirectToAction(nameof(Index));
+        //    }
+        //    ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre", devolucion.EstadoId);
+        //    ViewData["PrestamoId"] = new SelectList(_context.Prestamo, "Id", "Id", devolucion.PrestamoId);
+        //    //ViewData["UsuarioId"] = new SelectList(_context.Usuario, "Id", "Apellido", devolucion.UsuarioId);
+        //    return View(devolucion);
+        //}
 
         // GET: Devolucion/Edit/5
         public async Task<IActionResult> Edit(int? id)

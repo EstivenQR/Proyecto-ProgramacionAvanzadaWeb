@@ -27,8 +27,5 @@ namespace Examen1_LeonardoMadrigal.Models
 
         public IEnumerable<Devolucion>? Devoluciones { get; set; }
 
-
-
-
     }
 }

@@ -1,0 +1,287 @@
+@model AdminViewModel
+
+@{
+    //Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .custom-tabs-container {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .custom-tabs-container .nav-tabs {
+            flex-wrap: nowrap;
+        }
+
+        .custom-tabs-container .nav-item {
+            white-space: nowrap;
+        }
+
+        .custom-tabs-container::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .custom-tabs-container::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 3px;
+        }
+
+        .nav-tabs .nav-link {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Panel de administrador</h2>
+        <div class="custom-tabs-container">
+            <ul class="nav nav-tabs" id="adminTabs" role="tablist">
+                <li class="nav-item"><a class="nav-link active" data-bs-toggle="tab" href="#prestamos">Prestamos</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#devoluciones">Devoluciones</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#usuarios">Usuarios</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#libros">Libros</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#categorias">Categorías</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#estados">Estados</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#roles">Roles</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#multas">Multas</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pedidos">Pedidos</a></li>
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#notificaciones">Notificaciones</a></li>
+            </ul>
+        </div>
+
+        <div class="tab-content mt-3">
+
+                @* PRESTAMOS *@
+                <div class="tab-pane fade show active" id="prestamos">
+                    <h2>Prestamos</h2>
+                    <a asp-controller="Prestamo" asp-action="Create">Create New</a>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    Libro
+                                </th>
+                                <th>
+                                    Fecha de Inicio
+                                </th>
+                                <th>
+                                    Fecha Fin
+                                </th>
+                                <th>
+                                    Esta Reservado
+                                </th>
+                                <th>
+                                    Acciones
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var prestamo in Model.Prestamos)
+                            {
+                                <tr>
+                                    <td>
+                                        @prestamo.Id
+                                    </td>
+                                    <td>
+                                        @prestamo.FechaInicio
+                                    </td>
+                                    <td>
+                                        @prestamo.FechaFin
+                                    </td>
+                                    <td>
+                                        @prestamo.EstaReservado
+                                    </td>
+                                    <td>
+                                        <a asp-controller="Prestamo" asp-action="Edit" asp-route-id="@prestamo.Id">Edit</a> |
+                                        <a asp-controller="Prestamo" asp-action="Details" asp-route-id="@prestamo.Id">Details</a> |
+                                        <a asp-controller="Prestamo" asp-action="Delete" asp-route-id="@prestamo.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+
+              
+            <div class="tab-pane fade" id="devoluciones">
+				<h2>Devoluciones</h2>
+				<a asp-controller="Devolucion" asp-action="Create">Create New</a>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                FechaCaducidad
+                            </th>
+                            <th>
+                                EstadoLibro
+                            </th>
+                            <th>
+                                Prestamo
+                            </th>
+                            <th>
+                                Estado
+                            </th>
+                            <th>
+                                Usuario
+                            </th>
+                            <th>
+							    Acciones
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                @foreach (var devolucion in Model.Devoluciones) {
+                        <tr>
+                            <td>
+                                @devolucion.FechaCaducidad
+                            </td>
+                            <td>
+                                @devolucion.EstadoLibro
+                            </td>
+                            <td>
+                                @devolucion.Prestamo.Id
+                            </td>
+                            <td>
+                                @devolucion.Estado.Nombre
+                            </td>
+                            <td>
+                                @devolucion.Usuario.Username)
+                            </td>
+                                    <td>
+                                        <a asp-controller="Devolucion" asp-action="Edit" asp-route-id="@devolucion.Id">Edit</a> |
+                                        <a asp-controller="Devolucion" asp-action="Details" asp-route-id="@devolucion.Id">Details</a> |
+                                        <a asp-controller="Devolucion" asp-action="Delete" asp-route-id="@devolucion.Id">Delete</a>
+                                    </td>
+            
+                        </tr>
+                }
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="tab-pane fade" id="usuarios">
+                <p>
+                    <a asp-action="Create">Create New</a>
+                </p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Nombre
+                            </th>
+                            <th>
+                                Apellido
+                            </th>
+                            <th>
+                                Correo
+                            </th>
+                            <th>
+                                Telefono
+                            </th>
+                            <th>
+                                RutaImagen
+                            </th>
+                            <th>
+                                Username
+                            </th>
+                            <th>
+                                Password
+                            </th>
+                            <th>
+                                Rol
+                            </th>
+                            <th>
+                                Estado
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Usuarios)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Nombre)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Apellido)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Correo)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Telefono)
+                                </td>
+                                <td>
+                                    @if (item.RutaImagen != null)
+                                    {
+                                        <img src="data:image/png;base64,@(Convert.ToBase64String(item.RutaImagen))" width="100" />
+                                    }
+                                    else
+                                    {
+                                        <span>Sin imagen</span>
+                                    }
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Username)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Password)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Rol.Nombre)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Estado.Id)
+                                </td>
+                                <td>
+                                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+
+
+            <div class="tab-pane fade show active" id="libros">
+            </div>
+
+            <div class="tab-pane fade show active" id="categorias">
+            </div>
+
+            <div class="tab-pane fade show active" id="estados">
+            </div>
+
+            <div class="tab-pane fade show active" id="roles">
+            </div>
+
+            <div class="tab-pane fade show active" id="multas">
+            </div>
+
+            <div class="tab-pane fade show active" id="pedidos">
+            </div>
+
+            <div class="tab-pane fade show active" id="notificaciones">
+            </div>
+
+
+
+        </div>
+    </div>
+
+
+</body>
+@* @Html.AntiForgeryToken() *@
+
+</html>
