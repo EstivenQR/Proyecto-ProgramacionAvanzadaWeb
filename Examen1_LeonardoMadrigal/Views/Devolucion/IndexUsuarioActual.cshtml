@@ -47,6 +47,12 @@
                     <td>
                         @prestamo.EstaReservado
                     </td>
+                    <td>
+                        <form asp-action="CreateUsuarioActual" asp-controller="Devolucion" method="post">
+                            <input type="hidden" name="prestamoId" value="@prestamo.Id" />
+                            <button type="submit" class="btn btn-danger">Devolver</button>
+                        </form>
+                    </td>
                 </tr>
             }
         </tbody>
@@ -95,12 +101,13 @@
             <td>
                 @devolucion.Usuario.Username)
             </td>
+            
         </tr>
 }
     </tbody>
 </table>
 
-
-
 </body>
+@Html.AntiForgeryToken()
+
 </html>
