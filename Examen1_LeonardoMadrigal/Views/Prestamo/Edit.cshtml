@@ -1,10 +1,17 @@
-﻿@model Examen1_LeonardoMadrigal.Models.Prestamo
+@model Examen1_LeonardoMadrigal.Models.Prestamo
 
 @{
-    ViewData["Title"] = "Edit";
+    //Layout = null;
 }
 
-<h1>Edit</h1>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
 
 <h4>Prestamo</h4>
 <hr />
@@ -49,6 +56,5 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+</body>
+</html>
