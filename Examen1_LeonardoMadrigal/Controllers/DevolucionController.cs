@@ -139,6 +139,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             var libro = prestamo.Libro;
             if (libro != null)
             {
+                // CAMBIAR ESTA LOGICA PARA QUE SOLO CAMBIE EL LIBRO A ACTIVO SI EL LIBRO ESTA INACTIVO
                 libro.EstadoId = 1; // Activo
                 libro.Stock += 1;
             }

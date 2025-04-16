@@ -200,14 +200,14 @@ namespace Examen1_LeonardoMadrigal.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Login(string Usuario, string Contraseña)
+        public async Task<IActionResult> Login(string Usuario, string contraseña)
         {
-            Console.WriteLine($"Usuario: {Usuario}, Contraseña: {Contraseña}");
-            bool loginExitoso = await _context.LoginUsuario(Usuario, Contraseña);
+            Console.WriteLine($"Usuario: {Usuario}, Contraseña: {contraseña}");
+            bool loginExitoso = await _context.LoginUsuario(Usuario, contraseña);
 
             if (loginExitoso)
             {
-                var usuario = await _context.ObtenerUsuario(Usuario, Contraseña);
+                var usuario = await _context.ObtenerUsuario(Usuario, contraseña);
                 if (usuario != null)
                 {
                     var claims = new List<Claim>
