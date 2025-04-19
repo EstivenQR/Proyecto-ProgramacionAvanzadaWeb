@@ -30,11 +30,21 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // MUESTRA LOS PRESTAMOS SOLO DEL USUARIO ACTUAL
         public async Task<IActionResult> IndexUsuarioActual()
         {
-            // Obtener el ID del usuario actual
-            var userId = User.Identity.Name;
-            var proyectoLibreriaContext = _context.Prestamo.Include(p => p.Libro).Include(p => p.Usuario).Where(d => d.Usuario.Username == userId);
-            return View(await proyectoLibreriaContext.ToListAsync());
+            // Obtener el ID del usuario actual desde la sesión
+            var userId = HttpContext.Session.GetString("usuario");
 
+            if (string.IsNullOrEmpty(userId))
+            {
+                // Si no hay usuario en la sesión, redirigir a la página de login
+                return RedirectToAction("Login", "Usuario");
+            }
+
+            var proyectoLibreriaContext = _context.Prestamo
+                .Include(p => p.Libro)
+                .Include(p => p.Usuario)
+                .Where(d => d.Usuario.Username == userId);
+
+            return View(await proyectoLibreriaContext.ToListAsync());
         }
 
         // GET: Prestamo/Details/5
@@ -60,55 +70,69 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // GET: Prestamo/Create
         public async Task<IActionResult> Create(int? libroId)
         {
-            // 1. Obtener el usuario actual
-            var userId = User.Identity.Name;
+            // 1. Obtener el usuario actual desde la sesión
+            var userId = HttpContext.Session.GetString("usuario");  // Obtener el nombre de usuario desde la sesión
+            if (string.IsNullOrEmpty(userId))  // Verificar si el usuario está autenticado
+            {
+                return RedirectToAction("Login", "Usuario");  // Redirigir al login si no está autenticado
+            }
+
+            // 2. Obtener el usuario de la base de datos
             var usuario = await _context.Usuario.FirstOrDefaultAsync(u => u.Username == userId);
             if (usuario == null)
             {
                 return NotFound("Usuario no encontrado");
             }
 
+            // 3. Obtener el id del libro a reservar
+            var libro = await _context.Libro.FirstOrDefaultAsync(p => p.Id == libroId);
 
-            // 2. Obtener el id del libro a reservar
-            var libro = await _context.Libro.Include(p => p.Prestamos).FirstOrDefaultAsync(p => p.Id == libroId);
+            // 3.1 Si no se encuentra el libro, redirigir a una página de error o notificación
+            if (libro == null)
+            {
+                ModelState.AddModelError("", "Libro no encontrado.");
+                return View();
+            }
 
-                // 2.1 Se actualizar el estado del libro a "Inactivo" SOLO SI el stock es 0 
-                if (libro.Stock == 0)
-                {
-                    libro.EstadoId = 2;
-                }
+            // 3.2 Se actualiza el estado del libro a "Inactivo" solo si el stock es 0
+            if (libro.Stock == 0)
+            {
+                libro.EstadoId = 2;
+            }
 
-                // 2.2 Actualizar el stock del libro con un libro menos
-                if (libro.Stock <= 0)
-                {
-                    ModelState.AddModelError("", "No hay stock disponible para este libro.");
-                    //ViewBag.LibroId = new SelectList(_context.Libro, "Id", "Titulo", prestamo.LibroId);
-                    //return View(prestamo);
-                }
-            // Se le quita un libro al stock
+            // 3.3 Verificar si hay stock disponible
+            if (libro.Stock <= 0)
+            {
+                ModelState.AddModelError("", "No hay stock disponible para este libro.");
+                return View();
+            }
+
+            // 4. Reducir el stock del libro
             libro.Stock -= 1;
 
-
+            // 5. Crear el nuevo préstamo
             var prestamo = new Prestamo
             {
-                // Se le asigna el id del libro al prestamo
+                // Asignar el ID del libro al préstamo
                 LibroId = libro.Id,
-                // Se le asigna el id del usuario al prestamo
+                // Asignar el ID del usuario al préstamo
                 UsuarioId = usuario.Id,
-                // Se coloca la fecha de inicio como la fecha actual
+                // Establecer la fecha de inicio como la fecha actual
                 FechaInicio = DateTime.Now,
-                // Se le da al usuario solo 7 dias de reserva al libro
+                // Establecer la fecha de fin con 7 días de duración
                 FechaFin = DateTime.Now.AddDays(7),
-                // Poner el atributo EstaReservado a true
+                // Marcar el préstamo como reservado
                 EstaReservado = true
             };
 
+            // 6. Agregar el préstamo al contexto y guardar los cambios
             _context.Add(prestamo);
             await _context.SaveChangesAsync();
 
+            // 7. Redirigir a la acción de IndexUsuarioActual para mostrar los préstamos
             return RedirectToAction(nameof(IndexUsuarioActual));
-
         }
+
 
         // GET: Prestamo/Edit/5
         public async Task<IActionResult> Edit(int? id)
@@ -185,22 +209,32 @@ namespace Examen1_LeonardoMadrigal.Controllers
             return View(prestamo);
         }
 
-        // POST: Prestamo/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var prestamo = await _context.Prestamo.FindAsync(id);
-            if (prestamo != null)
-            {
-                _context.Prestamo.Remove(prestamo);
-            }
+		// POST: Prestamo/Delete/5
+		[HttpPost, ActionName("Delete")]
+		[ValidateAntiForgeryToken]
+		public async Task<IActionResult> DeleteConfirmed(int id)
+		{
+			var prestamo = await _context.Prestamo
+				.Include(p => p.Libro)
+				.FirstOrDefaultAsync(p => p.Id == id);
 
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
-        }
+			if (prestamo != null)
+			{
+				// Aumentar stock del libro si existe
+				if (prestamo.Libro != null)
+				{
+					prestamo.Libro.Stock += 1;
+				}
 
-        private bool PrestamoExists(int id)
+				_context.Prestamo.Remove(prestamo);
+				await _context.SaveChangesAsync();
+			}
+
+			return RedirectToAction(nameof(Index));
+		}
+
+
+		private bool PrestamoExists(int id)
         {
             return _context.Prestamo.Any(e => e.Id == id);
         }

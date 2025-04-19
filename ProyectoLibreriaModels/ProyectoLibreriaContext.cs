@@ -145,7 +145,7 @@ namespace Examen1_LeonardoMadrigal.Models
             });
         }
 
-        public async Task<bool> LoginUsuario(string Usuario, string contraseña)
+        public async Task<bool> LoginUsuario(string Usuario, string password)
         {
             var Exitos = new SqlParameter("@Exitos", System.Data.SqlDbType.Bit)
             {
@@ -154,19 +154,19 @@ namespace Examen1_LeonardoMadrigal.Models
 
             await Database.ExecuteSqlRawAsync("EXEC sp_Login @User, @Contraseña, @Exitos OUTPUT",
                 new SqlParameter("@User", Usuario ?? (object)DBNull.Value),
-                new SqlParameter("@Contraseña", contraseña ?? (object)DBNull.Value),
+                new SqlParameter("@Contraseña", password ?? (object)DBNull.Value),
                 Exitos);
 
             return (bool)(Exitos.Value ?? false);
         }
 
         // Me puede salir un usuario nulo y por ende es imporante el ? para que no me de error
-        public async Task<Usuario?> ObtenerUsuario(string Usu, string Contraseña)
+        public async Task<Usuario?> ObtenerUsuario(string Usu, string password)
         {
             // Lo primero es recibir lo que el metodo en el sql me regresa
             var LUsuario = await Usuario.FromSqlRaw("sp_ObtenerUsuario @User, @Contraseña",
                 new SqlParameter("@User", Usu),
-                new SqlParameter("@Contraseña", Contraseña)).ToListAsync();
+                new SqlParameter("@Contraseña", password)).ToListAsync();
 
             // Me devuelve un usuario o un usuario nulo
             return LUsuario.FirstOrDefault();
