@@ -1,10 +1,17 @@
-﻿@model Examen1_LeonardoMadrigal.Models.Prestamo
+@model Examen1_LeonardoMadrigal.Models.Prestamo
 
 @{
-    ViewData["Title"] = "Create";
+    //Layout = null;
 }
 
-<h1>Create</h1>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
 
 <h4>Prestamo</h4>
 <hr />
@@ -12,18 +19,14 @@
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            @if (ViewBag.LibroId != null)
-            {
-                <input type="hidden" asp-for="LibroId" value="@ViewBag.LibroId" />
-            }
-            else
-            {
-                <div class="form-group">
-                    <label asp-for="LibroId" class="control-label"></label>
-                    <select asp-for="LibroId" class="form-control" asp-items="ViewBag.LibroId"></select>
-                </div>
-            }
-
+            <div class="form-group">
+                <label asp-for="LibroId" class="control-label"></label>
+                <select asp-for="LibroId" class ="form-control" asp-items="ViewBag.LibroId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="UsuarioId" class="control-label"></label>
+                <select asp-for="UsuarioId" class ="form-control" asp-items="ViewBag.UsuarioId"></select>
+            </div>
             <div class="form-group">
                 <label asp-for="FechaInicio" class="control-label"></label>
                 <input asp-for="FechaInicio" class="form-control" />
@@ -50,6 +53,5 @@
     <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+</body>
+</html>

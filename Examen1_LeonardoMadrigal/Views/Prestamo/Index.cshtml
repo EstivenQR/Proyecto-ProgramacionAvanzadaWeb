@@ -1,11 +1,17 @@
-﻿@model IEnumerable<Examen1_LeonardoMadrigal.Models.Prestamo>
+@model IEnumerable<Examen1_LeonardoMadrigal.Models.Prestamo>
 
 @{
-    ViewData["Title"] = "Index";
+    //Layout = null;
 }
 
-<h1>Index</h1>
+<!DOCTYPE html>
 
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -23,6 +29,9 @@
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.EstaReservado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Usuario)
             </th>
             <th></th>
         </tr>
@@ -43,6 +52,9 @@
                 @Html.DisplayFor(modelItem => item.EstaReservado)
             </td>
             <td>
+                @Html.DisplayFor(modelItem => item.Usuario.Apellido)
+            </td>
+            <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
@@ -51,3 +63,5 @@
 }
     </tbody>
 </table>
+</body>
+</html>

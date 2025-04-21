@@ -1,4 +1,13 @@
-﻿<div class="top-content">
+﻿@{
+	var nombreUsuario = Context.Session.GetString("nombre");
+	var apellidoUsuario = Context.Session.GetString("apellido");
+	var rolUsuario = Context.Session.GetString("Rol");
+
+}
+
+
+
+<div class="top-content">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-md-6">
@@ -21,6 +30,15 @@
 			</div>
 			<div class="col-md-6">
 				<div class="right-element">
+					@if (!string.IsNullOrEmpty(nombreUsuario))
+					{
+						<p>Bienvenido, @nombreUsuario @apellidoUsuario </p>
+					}
+					else
+					{
+						<p>Bienvenido, invitado</p>
+					}
+
 					<a asp-area="" asp-controller="Usuario" asp-action="Login" class="user-account for-buy">
 						<i class="icon icon-user"></i>
 						<span>Cuenta</span>
@@ -74,12 +92,12 @@
 						<ul class="menu-list">
 							<!-- 1. -->
 							<li class="menu-item active">
-								<a asp-area="" asp-controller="Hogar" asp-action="Index">Home</a>
+								<a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
 							</li>
 
 							<!-- 2. -->
 							<li class="menu-item has-sub">
-								<a href="#pages" class="nav-link">Paginas</a>
+							@* 	<a href="#pages" class="nav-link">Paginas</a>
 								<ul>
 									<li class="active">
 										<a asp-area="" asp-controller="Home" asp-action="Index">Home</a>
@@ -91,21 +109,41 @@
 									
 								</ul>
 
-							</li>
+							</li> *@
 
 							<!-- 3. -->
 							<li class="menu-item">
-								<a class="nav-link" asp-area="" asp-controller="Notificacion" asp-action="Index">Notificaciones</a>
+								<a class="nav-link" asp-area="" asp-controller="Prestamo" asp-action="IndexUsuarioActual">Reservas</a>
 							</li>
 							<!-- 4. -->
+							@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
+								{
 							<li class="menu-item">
 								<a class="nav-link" asp-area="" asp-controller="Usuario" asp-action="Index">Usuarios</a>
 							</li>
-
+								}
 							<!-- 5. -->
+								@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
+								{
+								<li class="menu-item">
+									<a class="nav-link" asp-area="" asp-controller="Libro" asp-action="Index">Libros</a>
+								</li>
+								}
+							<!-- 6. -->
+							@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
+								{
 							<li class="menu-item">
-								<a class="nav-link" asp-area="" asp-controller="Libro" asp-action="Index">Libros</a>
+								<a class="nav-link" asp-area="" asp-controller="Devolucion" asp-action="IndexUsuarioActual">Devolucion</a>
 							</li>
+								}
+
+							<!-- 7. -->
+							@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
+								{
+							<li class="menu-item">
+								<a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
+							</li>
+								}
 
 
 

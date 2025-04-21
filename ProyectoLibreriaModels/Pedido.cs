@@ -24,10 +24,5 @@
         // Referencia a la tabla de Estado
         public Estado? Estado { get; set; }
 
-        // Referencia a que hay una llave foranea en la tabla de Devolucion
-        public IEnumerable<Devolucion>? Devoluciones { get; set; }
-
-
-
     }
 }

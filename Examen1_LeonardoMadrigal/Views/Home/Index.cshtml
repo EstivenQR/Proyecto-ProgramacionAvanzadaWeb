@@ -68,8 +68,12 @@
                                     <div class="product-item">
                                         <figure class="product-style">
                                             <img src="data:image/jpeg;base64,@Convert.ToBase64String(libro.ImagenPortada)" alt="Books" class="product-item" style="width: 100%; height: 300px; object-fit: contain;">
-                                            <button type="button" class="add-to-cart" data-id="@libro.Id" data-product-tile="add-to-cart">
-                                                Add to Cart
+
+                                            <!-- Botón para pedir el libro (manteniendo la animación al pasar el cursor) -->
+                                            <button type="button" class="add-to-cart" >
+                                                <a asp-controller="Prestamo" asp-action="Create" asp-route-libroId="@libro.Id" style="color: white">
+                                                    Reservar
+                                                </a>
                                             </button>
                                         </figure>
                                         <figcaption>
@@ -83,6 +87,7 @@
                             }
                         </div>
                     </div>
+
                 </div>
             </div>
             <a href="@Url.Action("AllBooks", "Home")" class="btn btn-outline-accent btn-accent-arrow">

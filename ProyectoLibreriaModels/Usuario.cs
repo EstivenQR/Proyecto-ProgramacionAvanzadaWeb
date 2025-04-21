@@ -30,6 +30,8 @@
         // 5. Relación con la tabla Prestamo
         public ICollection<Prestamo>? Prestamos { get; set; }
 
+        // 6. Relación con la tabla Devolucion
+        public ICollection<Devolucion>? Devoluciones { get; set; }
 
     }
 }
