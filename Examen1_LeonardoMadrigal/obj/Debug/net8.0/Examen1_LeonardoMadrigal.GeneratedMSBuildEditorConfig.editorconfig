@@ -17,267 +17,267 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Examen1_LeonardoMadrigal
 build_property.RootNamespace = Examen1_LeonardoMadrigal
-build_property.ProjectDir = D:\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\
+build_property.ProjectDir = F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal
+build_property.MSBuildProjectDirectory = F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\Examen1_LeonardoMadrigal
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Admin/Dashboard.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Admin/Dashboard.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Admin/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Create.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Delete.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Edit.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Categoria/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Create.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2b2x1Y2lvblxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Delete.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2b2x1Y2lvblxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2b2x1Y2lvblxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Edit.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2b2x1Y2lvblxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2b2x1Y2lvblxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/IndexUsuarioActual.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Devolucion/IndexUsuarioActual.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGV2b2x1Y2lvblxJbmRleFVzdWFyaW9BY3R1YWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Create.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Delete.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Edit.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Estado/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/AccessDenied.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/AccessDenied.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBY2Nlc3NEZW5pZWQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/AllBooks.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/AllBooks.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBbGxCb29rcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/Privacy.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Create.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Delete.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Edit.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/UsuarioIndex.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Libro/UsuarioIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9cVXN1YXJpb0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Create.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGFzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Delete.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGFzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGFzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Edit.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGFzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Multas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVsdGFzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Create.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2FjaW9uXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Delete.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2FjaW9uXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2FjaW9uXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Edit.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2FjaW9uXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Notificacion/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90aWZpY2FjaW9uXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Create.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Delete.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Edit.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/IndexUsuarioActual.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Prestamo/IndexUsuarioActual.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlc3RhbW9cSW5kZXhVc3VhcmlvQWN0dWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Create.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Delete.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Edit.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Rol/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/Error.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_Encabezado.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_Encabezado.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9FbmNhYmV6YWRvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_PiePagina.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_PiePagina.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9QaWVQYWdpbmEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_ValidationScriptsPartial.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Create.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Delete.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Details.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Edit.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Index.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Login.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Usuario/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/_ViewImports.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/_ViewStart.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_Layout.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-f7ad5me6j1
 
-[D:/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_LayoutPlantLib.cshtml]
+[F:/C\# Universidad/2025/Proyecto/Proyecto-ProgramacionAvanzadaWeb/Examen1_LeonardoMadrigal/Views/Shared/_LayoutPlantLib.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRQbGFudExpYi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = b-5cplpqvkis
