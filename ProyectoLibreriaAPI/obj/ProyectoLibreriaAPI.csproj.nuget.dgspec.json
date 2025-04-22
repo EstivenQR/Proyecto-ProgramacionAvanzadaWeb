@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj": {}
+    "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj": {}
   },
   "projects": {
-    "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj": {
+    "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj",
+        "projectUniqueName": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj",
         "projectName": "ProyectoLibreriaAPI",
-        "projectPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj",
-        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\obj\\",
+        "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj",
+        "packagesPath": "C:\\Users\\estiv\\.nuget\\packages\\",
+        "outputPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\estiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -29,8 +29,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
-                "projectPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj"
+              "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
+                "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj"
               }
             }
           }
@@ -94,17 +94,17 @@
         }
       }
     },
-    "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
+    "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj",
+        "projectUniqueName": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj",
         "projectName": "ProyectoLibreriaModels",
-        "projectPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj",
-        "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
-        "outputPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\obj\\",
+        "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj",
+        "packagesPath": "C:\\Users\\estiv\\.nuget\\packages\\",
+        "outputPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\estiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
