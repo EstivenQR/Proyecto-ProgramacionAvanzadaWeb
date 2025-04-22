@@ -454,37 +454,7 @@
                         </table>
                     </div>
             </div>
-            <div class="tab-pane fade " id="notificaciones">
-                <div class="container mt-2">
-                    <h2>Notificaciones</h2>
-                    <p>
-                        <a asp-controller="Notificacion" asp-action="Create">Crear Notificaciones</a>
-                    </p>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Mensaje</th>
-                                <th>Fecha de Solicitud</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            @foreach (var notificacion in Model.Notificaciones)
-                            {
-                                <tr>
-                                    <td>@notificacion.Mensaje</td>
-                                    <td>@notificacion.FechaSolicitud.ToString("dd/MM/yyyy")</td>
-                                    <td>
-                                        <a href="@Url.Action("Edit", "Notificacion", new { id = notificacion.Id })">Editar</a>
-                                        <a href="@Url.Action("Details", "Notificacion", new { id = notificacion.Id })">Detalles</a>
-                                        <a href="@Url.Action("Delete", "Notificacion", new { id = notificacion.Id })">Editar</a>
-                                    </td>
-                                </tr>
-                            }
-                        </tbody>
-                    </table>
-                </div>
-            </div>
+
 
         </div>
     </div>

@@ -7,30 +7,28 @@
     <title>Lista de Notificaciones</title>
 </head>
 <body>
-    <h1>Lista de Notificaciones</h1>
-    <!-- Botón para Crear Nueva Notificación -->
-    <a href="@Url.Action("Create", "Notificacion")" class="create-button">Crear Nueva Notificación</a>
-    <table>
-        <thead>
+
+<h2>Notificaciones</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Mensaje</th>
+            <th>Libro</th>
+            <th>Fecha</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
             <tr>
-                <th>Mensaje</th>
-                <th>Fecha de Solicitud</th>
-                <th>Acciones</th>
+                <td>@item.Mensaje</td>
+                <td>@item.Libro?.Titulo</td>
+                <td>@item.FechaSolicitud.ToString("dd/MM/yyyy HH:mm")</td>
             </tr>
-        </thead>
-        <tbody>
-            @foreach (var notificacion in Model)
-            {
-                <tr>
-                    <td>@notificacion.Mensaje</td>
-                    <td>@notificacion.FechaSolicitud.ToString("dd/MM/yyyy")</td>
-                    <td>
-                        <a href="@Url.Action("Edit", "Notificacion", new { id = notificacion.Id })">Editar</a>
-                        <a href="@Url.Action("Delete", "Notificacion", new { id = notificacion.Id })">Eliminar</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
+        }
+    </tbody>
+</table>
+
 </body>
 </html>

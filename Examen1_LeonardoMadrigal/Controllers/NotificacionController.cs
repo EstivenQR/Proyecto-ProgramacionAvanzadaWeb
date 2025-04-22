@@ -16,27 +16,15 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // GET: Notificacion/Index
         public async Task<IActionResult> Index()
         {
-            var notificaciones = await _context.Notificacion.ToListAsync();
-            return View(notificaciones); // Mostrar todas las notificaciones
+            var notificaciones = await _context.Notificaciones
+                .Include(n => n.Libro)
+                .OrderByDescending(n => n.FechaSolicitud)
+                .ToListAsync();
+
+            return View(notificaciones);
         }
 
-        // GET: Notificacion/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var notificacion = await _context.Notificacion
-                .FirstOrDefaultAsync(m => m.Id == id);
-            if (notificacion == null)
-            {
-                return NotFound();
-            }
-
-            return View(notificacion); // Mostrar los detalles de la notificación
-        }
+/*
 
         // GET: Notificacion/Create
         public IActionResult Create()
@@ -142,6 +130,6 @@ namespace Examen1_LeonardoMadrigal.Controllers
         private bool NotificacionExists(int id)
         {
             return _context.Notificacion.Any(e => e.Id == id);
-        }
+        }*/
     }
 }

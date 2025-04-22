@@ -15,7 +15,8 @@ namespace Examen1_LeonardoMadrigal.Models
         public DbSet<Estado> Estado { get; set; }
         public DbSet<Libro> Libro { get; set; }
         public DbSet<Multa> Multa { get; set; }
-        public DbSet<Notificaciones> Notificacion { get; set; }
+        public DbSet<Notificaciones> Notificaciones { get; set; }
+
         public DbSet<Pedido> Pedido { get; set; }
         public DbSet<Rol> Rol { get; set; }
         public DbSet<Usuario> Usuario { get; set; }
@@ -64,13 +65,13 @@ namespace Examen1_LeonardoMadrigal.Models
                 Multa.Property(c => c.PrecioMulta).IsRequired();
             });
 
-            // Se configura la tabla de Notificaciones
-            modelBuilder.Entity<Notificaciones>(Notificacion =>
-            {
-                Notificacion.HasKey(e => e.Id);
-                Notificacion.Property(n => n.Mensaje).HasMaxLength(150).IsRequired();
-                Notificacion.Property(c => c.FechaSolicitud).IsRequired();
-            });
+            // Configuración de la relación entre Libro y Notificaciones
+            modelBuilder.Entity<Notificaciones>()
+               .HasOne(n => n.Libro)
+               .WithMany(l => l.Notificaciones)
+               .HasForeignKey(n => n.LibroId)
+               .OnDelete(DeleteBehavior.SetNull);
+
 
             // Se configura la tabla de Pedido
             modelBuilder.Entity<Pedido>(Pedido =>
@@ -114,7 +115,6 @@ namespace Examen1_LeonardoMadrigal.Models
             // Configuración de la tabla Libro
             modelBuilder.Entity<Libro>().HasOne(l => l.Categoria).WithMany(c => c.Libros).HasForeignKey(l => l.CategoriaId);
             modelBuilder.Entity<Libro>().HasOne(l => l.Estado).WithMany(e => e.Libros).HasForeignKey(l => l.EstadoId);
-            modelBuilder.Entity<Libro>().HasOne(l => l.Notificacion).WithMany(n => n.Libros).HasForeignKey(l => l.NotificacionId);
 
             // Relación de Pedido
             modelBuilder.Entity<Pedido>().HasOne(p => p.Libro).WithMany(l => l.Pedidos).HasForeignKey(p => p.LibroId).OnDelete(DeleteBehavior.NoAction);

@@ -21,13 +21,21 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // GET: Categoria
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Categoria.ToListAsync());
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			return View(await _context.Categoria.ToListAsync());
         }
 
         // GET: Categoria/Details/5
         public async Task<IActionResult> Details(int? id)
         {
-            if (id == null)
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			if (id == null)
             {
                 return NotFound();
             }
@@ -55,7 +63,11 @@ namespace Examen1_LeonardoMadrigal.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nombre")] Categoria categoria)
         {
-            if (ModelState.IsValid)
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			if (ModelState.IsValid)
             {
                 _context.Add(categoria);
                 await _context.SaveChangesAsync();
@@ -67,7 +79,11 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // GET: Categoria/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
-            if (id == null)
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			if (id == null)
             {
                 return NotFound();
             }
@@ -87,7 +103,11 @@ namespace Examen1_LeonardoMadrigal.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre")] Categoria categoria)
         {
-            if (id != categoria.Id)
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			if (id != categoria.Id)
             {
                 return NotFound();
             }
@@ -118,7 +138,11 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // GET: Categoria/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
-            if (id == null)
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			if (id == null)
             {
                 return NotFound();
             }
@@ -138,7 +162,11 @@ namespace Examen1_LeonardoMadrigal.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var categoria = await _context.Categoria.FindAsync(id);
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			var categoria = await _context.Categoria.FindAsync(id);
             if (categoria != null)
             {
                 _context.Categoria.Remove(categoria);

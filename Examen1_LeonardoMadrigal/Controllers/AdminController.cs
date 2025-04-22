@@ -16,8 +16,12 @@ namespace Examen1_LeonardoMadrigal.Controllers
 
 		public async Task<IActionResult> Index()
         {
-            // Cantidad de libros para el dashboard
-            var totalLibros = await _context.Libro.CountAsync();
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			// Cantidad de libros para el dashboard
+			var totalLibros = await _context.Libro.CountAsync();
 
             var totalUsuariosActivos = await _context.Usuario.CountAsync(u => u.EstadoId == 1);
             var totalUsuariosInactivos = await _context.Usuario.CountAsync(u => u.EstadoId != 2);
@@ -41,7 +45,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             var librosContext = _context.Libro;
             var estadosContext = _context.Estado;
             var multasContext = _context.Multa;
-            var notificacionesContext = _context.Notificacion;
+
             var pedidosContext = _context.Pedido;
             var rolesContext = _context.Rol;
             var usuariosContext = _context.Usuario;
@@ -65,7 +69,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
                 Libros = await librosContext.ToListAsync(),
                 Estados = await estadosContext.ToListAsync(),
                 Multas = await multasContext.ToListAsync(),
-                Notificaciones = await notificacionesContext.ToListAsync(),
+ 
                 Pedidos = await pedidosContext.ToListAsync(),
                 Roles = await rolesContext.ToListAsync(),
                 Usuarios = await usuariosContext.ToListAsync(),

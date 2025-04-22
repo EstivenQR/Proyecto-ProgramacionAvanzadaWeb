@@ -24,7 +24,6 @@ namespace Examen1_LeonardoMadrigal.Controllers
             var libros = _context.Libro
                 .Include(l => l.Categoria)
                 .Include(l => l.Estado)
-                .Include(l => l.Notificacion)
                 .AsQueryable();  // Permite aplicar filtros dinámicos
 
             // Si el parámetro searchString no es nulo ni vacío, aplica el filtro
@@ -47,7 +46,6 @@ namespace Examen1_LeonardoMadrigal.Controllers
             var libros = _context.Libro
                 .Include(l => l.Categoria)
                 .Include(l => l.Estado)
-                .Include(l => l.Notificacion)
                 .AsQueryable();
 
             if (!string.IsNullOrEmpty(searchString))
@@ -69,7 +67,6 @@ namespace Examen1_LeonardoMadrigal.Controllers
             var libro = await _context.Libro
                 .Include(l => l.Categoria)
                 .Include(l => l.Estado)
-                .Include(l => l.Notificacion)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (libro == null)
             {
@@ -84,37 +81,37 @@ namespace Examen1_LeonardoMadrigal.Controllers
         {
             ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre");
             ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id");
-            ViewData["NotificacionId"] = new SelectList(_context.Notificacion, "Id", "Mensaje");
             return View();
         }
 
         // POST: Libro/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Titulo,Stock,Autor,FechaLanzamiento,Editorial,Sinopsis,CategoriaId,EstadoId,NotificacionId,Precio")] Libro libro, IFormFile imagenPortada)
+        public async Task<IActionResult> Create([Bind("Id,Titulo,Stock,Autor,FechaLanzamiento,Editorial,Sinopsis,CategoriaId,EstadoId,Precio")] Libro libro, IFormFile imagenPortada)
         {
-            // Validación
             if (!ModelState.IsValid)
             {
                 ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
                 ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
-                ViewData["NotificacionId"] = new SelectList(_context.Notificacion, "Id", "Mensaje", libro.NotificacionId);
                 return View(libro);
             }
 
-            // Procesar la imagen si se sube un archivo
+            // Procesar imagen
             if (imagenPortada != null && imagenPortada.Length > 0)
             {
                 using (var ms = new MemoryStream())
                 {
                     await imagenPortada.CopyToAsync(ms);
-                    libro.ImagenPortada = ms.ToArray();  // Guardar la imagen en el campo ImagenPortada
+                    libro.ImagenPortada = ms.ToArray();
                 }
             }
 
+            // Guardar libro
             _context.Add(libro);
-            await _context.SaveChangesAsync();
-            //return RedirectToAction(nameof(Index)); // Redirigir al índice de libros
+            await _context.SaveChangesAsync(); // Aquí ya tienes libro.Id
+
+         
+
             return RedirectToAction("Index", "Admin");
         }
 
@@ -133,7 +130,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             }
             ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
             ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
-            ViewData["NotificacionId"] = new SelectList(_context.Notificacion, "Id", "Mensaje", libro.NotificacionId);
+
             return View(libro);
         }
 
@@ -162,7 +159,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
                 // Recargar SelectLists
                 ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
                 ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
-                ViewData["NotificacionId"] = new SelectList(_context.Notificacion, "Id", "Mensaje", libro.NotificacionId);
+
                 return View(libro);
             }
 
@@ -220,7 +217,6 @@ namespace Examen1_LeonardoMadrigal.Controllers
             var libro = await _context.Libro
                 .Include(l => l.Categoria)
                 .Include(l => l.Estado)
-                .Include(l => l.Notificacion)
                 .FirstOrDefaultAsync(m => m.Id == id);
             if (libro == null)
             {

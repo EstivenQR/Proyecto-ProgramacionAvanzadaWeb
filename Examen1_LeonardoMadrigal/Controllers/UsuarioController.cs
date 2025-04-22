@@ -294,7 +294,6 @@ namespace Examen1_LeonardoMadrigal.Controllers
 
         public async Task<IActionResult> Logout()
         {
-            await HttpContext.SignOutAsync("CookieAuth");
             HttpContext.Session.Clear();
             return RedirectToAction("Index", "Home");
         }

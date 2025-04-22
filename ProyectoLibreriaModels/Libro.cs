@@ -24,8 +24,8 @@
         public Estado? Estado { get; set; }
 
         // 3. Relación con la tabla Notificacion
-        public int NotificacionId { get; set; }
-        public Notificaciones? Notificacion { get; set; }
+
+    public ICollection<Notificaciones>? Notificaciones { get; set; }
 
         // 4. Relación con la tabla Pedido
         public IEnumerable<Pedido>? Pedidos { get; set; }

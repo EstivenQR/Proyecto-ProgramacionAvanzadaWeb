@@ -22,6 +22,10 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // Modificar la acción Index para obtener el último libro
         public async Task<IActionResult> Index()
         {
+            var cantidadNotificaciones = _context.Notificaciones
+    .Count(); // Cuenta todas las notificaciones
+
+            ViewBag.CantidadNotificaciones = cantidadNotificaciones;
             // Obtener todos los libros desde la base de datos
             var libros = await _context.Libro.ToListAsync();
 
@@ -36,8 +40,12 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // Acción para ver todos los libros
         public async Task<IActionResult> AllBooks()
         {
-            // Obtener todos los libros desde la base de datos
-            var libros = await _context.Libro.Include(l => l.Categoria).ToListAsync();
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			// Obtener todos los libros desde la base de datos
+			var libros = await _context.Libro.Include(l => l.Categoria).ToListAsync();
 
             // Pasar los libros a la vista
             return View(libros);
@@ -46,8 +54,12 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // Acción para ver los detalles de un libro
         public async Task<IActionResult> Details(int id)
         {
-            // Obtener el libro con el id correspondiente
-            var libro = await _context.Libro.Include(l => l.Categoria)
+			var cantidadNotificaciones = _context.Notificaciones
+.Count(); // Cuenta todas las notificaciones
+
+			ViewBag.CantidadNotificaciones = cantidadNotificaciones;
+			// Obtener el libro con el id correspondiente
+			var libro = await _context.Libro.Include(l => l.Categoria)
                                              .FirstOrDefaultAsync(l => l.Id == id);
 
             if (libro == null)
