@@ -125,7 +125,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Apellido,Correo,Telefono,RutaImagen,Username,Password,RolId,EstadoId")] Usuario usuario)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nombre,Apellido,Correo,Telefono,Username,Password,RolId,EstadoId")] Usuario usuario, IFormFile imagenPerfil)
         {
             if (id != usuario.Id)
             {
@@ -136,6 +136,15 @@ namespace Examen1_LeonardoMadrigal.Controllers
             {
                 try
                 {
+                    // Procesar la imagen si se sube un archivo
+                    if (imagenPerfil != null && imagenPerfil.Length > 0)
+                    {
+                        using (var ms = new MemoryStream())
+                        {
+                            await imagenPerfil.CopyToAsync(ms);
+                            usuario.RutaImagen = ms.ToArray();
+                        }
+                    }
                     _context.Update(usuario);
                     await _context.SaveChangesAsync();
                 }

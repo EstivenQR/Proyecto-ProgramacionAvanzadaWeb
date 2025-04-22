@@ -1,0 +1,117 @@
+﻿@{
+    //Layout = null;
+}
+
+@model Examen1_LeonardoMadrigal.ViewModels.DashboardViewModel
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        .custom-tabs-container {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+
+        .custom-tabs-container .nav-tabs {
+            flex-wrap: nowrap;
+        }
+
+        .custom-tabs-container .nav-item {
+            white-space: nowrap;
+        }
+
+        .custom-tabs-container::-webkit-scrollbar {
+            height: 6px;
+        }
+
+        .custom-tabs-container::-webkit-scrollbar-thumb {
+            background-color: #ccc;
+            border-radius: 3px;
+        }
+
+        .nav-tabs .nav-link {
+            display: inline-block;
+        }
+    </style>
+</head>
+    <body>
+
+    <h2>Panel de Administración</h2>
+
+    <div>
+        <p><strong>Total de Libros:</strong> @Model.TotalLibros</p>
+        <p><strong>Usuarios Activos:</strong> @Model.TotalUsuariosActivos</p>
+        <p><strong>Usuarios Inactivos:</strong> @Model.TotalUsuariosInactivos</p>
+    </div>
+
+    <h3>Top 5 Libros más Populares</h3>
+    <canvas id="topLibrosChart" width="800" height="450"></canvas>
+
+    <h3>Usuarios Activos vs Inactivos</h3>
+    <canvas id="usuariosEstadoChart" width="800" height="450"></canvas>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        
+        // Datos para el gráfico de Top 5 Eventos más Populares **********
+        var topLibrosData = {
+            labels: @Html.Raw(Json.Serialize(Model.TopEventos.Select(e => e.Titulo))),
+            datasets: [{
+                label: 'Libros por Stock',
+                data: @Html.Raw(Json.Serialize(Model.TopEventos.Select(e => e.TotalStock))),
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        };
+
+        // Crear el gráfico de Top 5 Eventos (Bar)
+        var ctxTopLibros = document.getElementById('topLibrosChart').getContext('2d');
+        new Chart(ctxTopLibros, {
+            type: 'bar', // Tipo de gráfico: 'bar', 'line', etc.
+            data: topLibrosData,
+            options: {
+                responsive: false,
+                scales: {
+                    y: { beginAtZero: true }
+                }
+            }
+        });
+
+        // Datos para el gráfico de Usuarios Activos vs Inactivos
+        var usuariosEstadoData = {
+            labels: ['Activos', 'Inactivos'],
+            datasets: [{
+                label: 'Estado de Usuarios',
+                data: [@Model.TotalUsuariosActivos, @Model.TotalUsuariosInactivos],
+                backgroundColor: ['rgba(54, 162, 235, 0.5)', 'rgba(255, 99, 132, 0.5)'],
+                borderColor: ['rgba(54, 162, 235, 1)', 'rgba(255, 99, 132, 1)'],
+                borderWidth: 1
+            }]
+        };
+
+        var ctxUsuariosEstado = document.getElementById('usuariosEstadoChart').getContext('2d');
+        new Chart(ctxUsuariosEstado, {
+            type: 'pie',
+            data: usuariosEstadoData,
+            options: {
+                responsive: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+    </script>
+
+
+    </body>
+</html>

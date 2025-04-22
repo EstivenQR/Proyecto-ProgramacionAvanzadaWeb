@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
+    <title>Detalles</title>
 </head>
 <body>
 
@@ -39,20 +39,20 @@
             @Html.DisplayNameFor(model => model.EstaReservado)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.EstaReservado)
+                @Html.DisplayFor(model => model.EstaReservado, new { @class = "text", Value = Model.EstaReservado ? "Si" : "No" })
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Usuario)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Usuario.Apellido)
+            @Html.DisplayFor(model => model.Usuario.Username)
         </dd>
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-        <a asp-action="ExtenderPrestamo" asp-route-prestamoId="@Model?.Id" class="btn btn-primary">¿Te gustaría extender el tiempo?</a>|
-    <a asp-action="Index">Back to List</a>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Editar</a> |
+        @* <a asp-action="ExtenderPrestamo" asp-route-prestamoId="@Model?.Id" class="btn btn-primary">¿Te gustaría extender el tiempo?</a>| *@
+    <a asp-controller="Admin" asp-action="Index">Volver</a>
 </div>
 </body>
 </html>

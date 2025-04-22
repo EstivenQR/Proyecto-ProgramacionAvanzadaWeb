@@ -46,6 +46,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
 			// Filtrar los préstamos del usuario actual
 			var prestamosContext = _context.Prestamo
 				.Include(d => d.Usuario)
+                .Include(p => p.Libro)
 				.Where(d => d.Usuario.Username == userId && d.EstaReservado == true);
 
 			var viewModel = new DevolucionPrestamoUsuario_ViewModel
@@ -98,7 +99,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             {
                 _context.Add(devolucion);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Admin");
             }
             ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre", devolucion.EstadoId);
             ViewData["PrestamoId"] = new SelectList(_context.Prestamo, "Id", "Id", devolucion.PrestamoId);
@@ -140,7 +141,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
 				FechaCaducidad = DateTime.Now,
 				EstadoLibro = true,
 				PrestamoId = prestamo.Id,
-				EstadoId = 2, // Estado de devolución "activo"
+				EstadoId = 1, // Estado de devolución "activo"
 				UsuarioId = usuario.Id
 			};
 
@@ -271,7 +272,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Admin");
             }
             ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre", devolucion.EstadoId);
             ViewData["PrestamoId"] = new SelectList(_context.Prestamo, "Id", "Id", devolucion.PrestamoId);

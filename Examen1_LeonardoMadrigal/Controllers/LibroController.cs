@@ -114,7 +114,8 @@ namespace Examen1_LeonardoMadrigal.Controllers
 
             _context.Add(libro);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index)); // Redirigir al índice de libros
+            //return RedirectToAction(nameof(Index)); // Redirigir al índice de libros
+            return RedirectToAction("Index", "Admin");
         }
 
         // GET: Libro/Edit/5
@@ -203,7 +204,8 @@ namespace Examen1_LeonardoMadrigal.Controllers
                 }
             }
 
-            return RedirectToAction(nameof(Index));
+            //return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Admin");
         }
 
 
