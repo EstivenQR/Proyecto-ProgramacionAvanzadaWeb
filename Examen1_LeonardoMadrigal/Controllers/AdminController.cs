@@ -16,6 +16,27 @@ namespace Examen1_LeonardoMadrigal.Controllers
 
 		public async Task<IActionResult> Index()
         {
+            // Cantidad de libros para el dashboard
+            var totalLibros = await _context.Libro.CountAsync();
+
+            var totalUsuariosActivos = await _context.Usuario.CountAsync(u => u.EstadoId == 1);
+            var totalUsuariosInactivos = await _context.Usuario.CountAsync(u => u.EstadoId != 2);
+
+
+            var topLibros = await _context.Libro
+                .Select(e => new TopEventoViewModel
+                {
+                    Titulo = e.Titulo,
+                    // Cuenta la cantidad de stock de libros
+                    TotalStock = e.Stock,
+                })
+                .OrderByDescending(e => e.TotalStock)
+                .Take(5)
+                .ToListAsync();
+
+
+            // Vistas de CRUD
+
             var categoriasContext = _context.Categoria;
             var librosContext = _context.Libro;
             var estadosContext = _context.Estado;
@@ -27,6 +48,17 @@ namespace Examen1_LeonardoMadrigal.Controllers
             var prestamosContext = _context.Prestamo;
             var devolucionesContext = _context.Devolucion;
 
+            // Vista Modelo del Dashboard
+            var dashboardViewModel = new DashboardViewModel
+            {
+                TotalLibros = totalLibros,
+                TotalUsuariosActivos = totalUsuariosActivos,
+                TotalUsuariosInactivos = totalUsuariosInactivos,
+                TopEventos = topLibros
+            };
+
+
+            // Modelo del CRUD 
             var ViewModel = new AdminViewModel
             {
                 categorias = await categoriasContext.ToListAsync(),
@@ -42,6 +74,40 @@ namespace Examen1_LeonardoMadrigal.Controllers
             };
     
             return View(ViewModel);
+        }
+
+        public async Task<IActionResult> Dashboard()
+        {
+            // Cantidad de libros para el dashboard
+            var totalLibros = await _context.Libro.CountAsync();
+
+            var totalUsuariosActivos = await _context.Usuario.CountAsync(u => u.EstadoId == 1);
+            var totalUsuariosInactivos = await _context.Usuario.CountAsync(u => u.EstadoId == 2);
+
+
+            var topLibros = await _context.Libro
+                .Select(e => new TopEventoViewModel
+                {
+                    Titulo = e.Titulo,
+                    // Cuenta la cantidad de stock de libros
+                    TotalStock = e.Stock,
+                })
+                .OrderByDescending(e => e.TotalStock)
+                .Take(5)
+                .ToListAsync();
+
+            // Vista Modelo del Dashboard
+            var dashboardViewModel = new DashboardViewModel
+            {
+                TotalLibros = totalLibros,
+                TotalUsuariosActivos = totalUsuariosActivos,
+                TotalUsuariosInactivos = totalUsuariosInactivos,
+                TopEventos = topLibros
+            };
+
+
+
+            return View(dashboardViewModel);
         }
     }
 }

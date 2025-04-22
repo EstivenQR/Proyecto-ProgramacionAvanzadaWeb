@@ -112,30 +112,28 @@
 							</li> *@
 
 							<!-- 3. -->
-							<li class="menu-item">
+							@* <li class="menu-item">
 								<a class="nav-link" asp-area="" asp-controller="Prestamo" asp-action="IndexUsuarioActual">Reservas</a>
-							</li>
+							</li> *@
 							<!-- 4. -->
-							@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
+							@* @if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
 								{
 							<li class="menu-item">
 								<a class="nav-link" asp-area="" asp-controller="Usuario" asp-action="Index">Usuarios</a>
 							</li>
-								}
+								} *@
 							<!-- 5. -->
-								@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
+								@* @if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
 								{
 								<li class="menu-item">
 									<a class="nav-link" asp-area="" asp-controller="Libro" asp-action="Index">Libros</a>
 								</li>
-								}
+								} *@
 							<!-- 6. -->
-							@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
-								{
+							
 							<li class="menu-item">
-								<a class="nav-link" asp-area="" asp-controller="Devolucion" asp-action="IndexUsuarioActual">Devolucion</a>
-							</li>
-								}
+								<a class="nav-link" asp-area="" asp-controller="Devolucion" asp-action="IndexUsuarioActual">Reservas</a>
+							</li>	
 
 							<!-- 7. -->
 							@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
@@ -144,6 +142,15 @@
 								<a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Index">Admin</a>
 							</li>
 								}
+
+							<!-- 8. -->
+							@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
+								{
+									<li class="menu-item">
+										<a class="nav-link" asp-area="" asp-controller="Admin" asp-action="Dashboard">Reportes</a>
+									</li>
+								}
+
 
 
 

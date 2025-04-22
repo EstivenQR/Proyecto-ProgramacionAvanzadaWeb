@@ -71,9 +71,18 @@
 
                                             <!-- Botón para pedir el libro (manteniendo la animación al pasar el cursor) -->
                                             <button type="button" class="add-to-cart" >
-                                                <a asp-controller="Prestamo" asp-action="Create" asp-route-libroId="@libro.Id" style="color: white">
+                                                @* <a asp-controller="Prestamo" asp-action="Create" asp-route-libroId="@libro.Id" style="color: white">
                                                     Reservar
-                                                </a>
+                                                </a> *@
+                                                @* <a href="@Url.Action("Details", "Home", new { id = ViewBag.Id })" class="btn btn-outline-accent btn-accent-arrow"> *@
+                                                    <button type="button" class="add-to-cart">
+                                                        <a href="@Url.Action("Details", "Home", new { id = libro.Id })" class="btn btn-outline-accent btn-accent-arrow">
+                                                            Leer Más <i class="icon icon-ns-arrow-right"></i>
+                                                        </a>
+                                                    </button>
+                                                    @* Leer Más <i class="icon icon-ns-arrow-right"></i> *@
+                                                @* </a> *@
+
                                             </button>
                                         </figure>
                                         <figcaption>

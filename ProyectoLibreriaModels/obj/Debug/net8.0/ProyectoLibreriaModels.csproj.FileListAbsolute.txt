@@ -1,18 +1,3 @@
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.deps.json
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.runtimeconfig.json
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.dll
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.pdb
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.csproj.AssemblyReference.cache
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.GeneratedMSBuildEditorConfig.editorconfig
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.AssemblyInfoInputs.cache
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.AssemblyInfo.cs
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.csproj.CoreCompileInputs.cache
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.sourcelink.json
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.dll
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\refint\ProyectoLibreriaModels.dll
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.pdb
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.genruntimeconfig.cache
-D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ref\ProyectoLibreriaModels.dll
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.deps.json
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.runtimeconfig.json
 F:\C# Universidad\2025\Proyecto\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.dll
@@ -58,3 +43,18 @@ C:\Users\JOSHUA\Desktop\repo\ProyectoLibreriaModels\obj\Debug\net8.0\refint\Proy
 C:\Users\JOSHUA\Desktop\repo\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.pdb
 C:\Users\JOSHUA\Desktop\repo\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.genruntimeconfig.cache
 C:\Users\JOSHUA\Desktop\repo\ProyectoLibreriaModels\obj\Debug\net8.0\ref\ProyectoLibreriaModels.dll
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.deps.json
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.runtimeconfig.json
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.dll
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\bin\Debug\net8.0\ProyectoLibreriaModels.pdb
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.csproj.AssemblyReference.cache
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.GeneratedMSBuildEditorConfig.editorconfig
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.AssemblyInfoInputs.cache
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.AssemblyInfo.cs
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.csproj.CoreCompileInputs.cache
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.sourcelink.json
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.dll
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\refint\ProyectoLibreriaModels.dll
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.pdb
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ProyectoLibreriaModels.genruntimeconfig.cache
+D:\Proyecto-ProgramacionAvanzadaWeb\ProyectoLibreriaModels\obj\Debug\net8.0\ref\ProyectoLibreriaModels.dll

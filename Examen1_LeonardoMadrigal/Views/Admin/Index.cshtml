@@ -51,7 +51,7 @@
                 <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#estados">Estados</a></li>
                 <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#roles">Roles</a></li>
                 <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#multas">Multas</a></li>
-                <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pedidos">Pedidos</a></li>
+                @* <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#pedidos">Pedidos</a></li> *@
                 <li class="nav-item"><a class="nav-link" data-bs-toggle="tab" href="#notificaciones">Notificaciones</a></li>
             </ul>
         </div>
@@ -61,7 +61,7 @@
                 @* PRESTAMOS *@
                 <div class="tab-pane fade show active" id="prestamos">
                     <h2>Prestamos</h2>
-                    <a asp-controller="Prestamo" asp-action="Create">Create New</a>
+                    @* <a asp-controller="Prestamo" asp-action="Create">Create New</a> *@
                     <table class="table">
                         <thead>
                             <tr>
@@ -109,16 +109,16 @@
                                     }
                                 </td>
                                 <td>
-                                    @prestamo.EstaReservado
+                                    @(prestamo.EstaReservado ? "Si" : "No")
                                 </td>
                                 <td>
-                                    <a asp-controller="Prestamo" asp-action="Edit" asp-route-id="@prestamo.Id">Edit</a> |
-                                    <a asp-controller="Prestamo" asp-action="Details" asp-route-id="@prestamo.Id">Details</a> |
-                                    <a asp-controller="Prestamo" asp-action="Delete" asp-route-id="@prestamo.Id">Delete</a> |
+                                    <a asp-controller="Prestamo" asp-action="Edit" asp-route-id="@prestamo.Id">Editar</a> |
+                                    <a asp-controller="Prestamo" asp-action="Details" asp-route-id="@prestamo.Id">Detalles</a> |
+                                    <a asp-controller="Prestamo" asp-action="Delete" asp-route-id="@prestamo.Id">Eliminar</a> |
 
                                     @if (estaVencido)
                                     {
-                                            <a asp-controller="Multas" asp-action="Create" asp-route-id="@prestamo.Id">Aplicar Multa</a>
+                                            <a asp-controller="Multas" asp-action="Create">Aplicar Multa</a>
                                  
                                     }
                                 </td>
@@ -133,16 +133,16 @@
               
             <div class="tab-pane fade" id="devoluciones">
 				<h2>Devoluciones</h2>
-				<a asp-controller="Devolucion" asp-action="Create">Create New</a>
+				<a asp-controller="Devolucion" asp-action="Create">Crear Devolucion</a>
                 <table class="table">
                     <thead>
                         <tr>
                             <th>
                                 FechaCaducidad
                             </th>
-                            <th>
+                            @* <th>
                                 EstadoLibro
-                            </th>
+                            </th> *@
                             <th>
                                 Prestamo
                             </th>
@@ -164,9 +164,9 @@
                             <td>
                                 @devolucion.FechaCaducidad
                             </td>
-                            <td>
-                                @devolucion.EstadoLibro
-                            </td>
+                            @* <td>
+                                @(devolucion.EstadoLibro ? "Activo" : "No")
+                            </td> *@
                             <td>
                                 @devolucion.Prestamo.Id
                             </td>
@@ -177,9 +177,9 @@
                                 @devolucion.Usuario.Username
                             </td>
                                     <td>
-                                        <a asp-controller="Devolucion" asp-action="Edit" asp-route-id="@devolucion.Id">Edit</a> |
-                                        <a asp-controller="Devolucion" asp-action="Details" asp-route-id="@devolucion.Id">Details</a> |
-                                        <a asp-controller="Devolucion" asp-action="Delete" asp-route-id="@devolucion.Id">Delete</a>
+                                        <a asp-controller="Devolucion" asp-action="Edit" asp-route-id="@devolucion.Id">Editar</a> |
+                                        <a asp-controller="Devolucion" asp-action="Details" asp-route-id="@devolucion.Id">Detalles</a> |
+                                        <a asp-controller="Devolucion" asp-action="Delete" asp-route-id="@devolucion.Id">Eliminar</a>
                                     </td>
             
                         </tr>
@@ -189,8 +189,9 @@
             </div>
 
             <div class="tab-pane fade" id="usuarios">
+                <h2>Usuarios</h2>
                 <p>
-                    <a asp-action="Create">Create New</a>
+                    <a asp-controller="Usuario" asp-action="Create">Crear Usuario</a>
                 </p>
                 <table class="table">
                     <thead>
@@ -260,9 +261,9 @@
                                     @Html.DisplayFor(modelItem => item.Estado.Id)
                                 </td>
                                 <td>
-                                    <a asp-controller="Usuario" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                    <a asp-controller="Usuario" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                    <a asp-controller="Usuario" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                    <a asp-controller="Usuario" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                                    <a asp-controller="Usuario" asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                                    <a asp-controller="Usuario" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
                                 </td>
                             </tr>
                         }
@@ -273,6 +274,10 @@
 
             <div class="tab-pane fade" id="libros">
                 <div class="container mt-2">
+                    <h2>Libros</h2>
+                    <p>
+                        <a asp-controller="Libro" asp-action="Create">Crear Libro</a>
+                    </p>
                     <table class="table ">
                         <thead>
                             <tr>
@@ -285,7 +290,7 @@
                                 <th>Precio</th>
                                 <th>Categoria</th>
                                 <th>Estado</th>
-                                <th>Actions</th>
+                                <th>Accciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -302,9 +307,9 @@
                                     <td>@Html.DisplayFor(modelItem => item.Categoria.Nombre)</td>
                                     <td>@Html.DisplayFor(modelItem => item.Estado.Id)</td>
                                     <td>
-                                        <a asp-controller="Libro" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                        <a asp-controller="Libro" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                        <a asp-controller="Libro" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                        <a asp-controller="Libro" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                                        <a asp-controller="Libro" asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                                        <a asp-controller="Libro" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
                                     </td>
                                 </tr>
                             }
@@ -316,11 +321,15 @@
 
             <div class="tab-pane fade " id="categorias">
                 <div class="container mt-2">
+                    <h2>Usuarios</h2>
+                    <p>
+                        <a asp-controller="Categoria" asp-action="Create">Crear Categoria</a>
+                    </p>
                     <table class="table ">
                         <thead>
                             <tr>
                                 <th>Nombre</th>
-                                <th>Actions</th>
+                                <th>Accciones</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -329,9 +338,9 @@
                                 <tr>
                                     <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
                                     <td>
-                                        <a asp-controller="Categoria" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                        <a asp-controller="Categoria" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                        <a asp-controller="Categoria" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                        <a asp-controller="Categoria" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                                        <a asp-controller="Categoria" asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                                        <a asp-controller="Categoria" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
                                     </td>
                                 </tr>
                             }
@@ -341,25 +350,65 @@
             </div>
 
             <div class="tab-pane fade" id="estados">
+                <h2>Estados</h2>
+                <p>
+                    <a asp-controller="Estado" asp-action="Create">Crear Estado</a>
+                </p>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Nombre
+                            </th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.Estados)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Nombre)
+                                </td>
+                                <td>
+                                    <a asp-controller="Estado" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                                    <a asp-controller="Estado" asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                                    <a asp-controller="Estado" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
             </div>
             
 
 
             <div class="tab-pane fade" id="roles">
                 <div class="container mt-2">
-                    <table class="table ">
+                    <p>
+                        <a asp-controller="Rol" asp-action="Create">Crear Rol</a>
+                    </p>
+                    <table class="table">
                         <thead>
                             <tr>
-                                <th style="text-align:center">Nombre</th>
-                       
+                                <th>
+                                    Nombre
+                                </th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
                             @foreach (var item in Model.Roles)
                             {
                                 <tr>
-                                    <td style="text-align: center">@Html.DisplayFor(modelItem => item.Nombre)</td>
-    
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Nombre)
+                                    </td>
+                                    <td>
+                                        <a asp-controller="Rol" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                                        <a asp-controller="Rol" asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                                        <a asp-controller="Rol" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
+                                    </td>
                                 </tr>
                             }
                         </tbody>
@@ -370,6 +419,10 @@
 
             <div class="tab-pane fade " id="multas">
                     <div class="container mt-2">
+                        <h2>Multas</h2>
+                        <p>
+                            <a asp-controller="Multas" asp-action="Create">Crear Multas</a>
+                        </p>
                         <table class="table ">
                             <thead>
                                 <tr>
@@ -378,7 +431,6 @@
                                     <th style="text-align:center">Usuario</th>
                                     <th style="text-align:center">Estado</th>
                                     <th style="text-align:center">Actions</th>
-
 
                                 </tr>
                             </thead>
@@ -391,9 +443,9 @@
                                     <td style ="text-align:center">@Html.DisplayFor(modelItem => item.Usuario.Nombre)</td>
                                     <td style="text-align:center">@Html.DisplayFor(modelItem => item.Estado.Nombre)</td>
                                         <td>
-                                            <a asp-controller="Multas" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                            <a asp-controller="Multas" asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                            <a asp-controller="Multas" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                            <a asp-controller="Multas" asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                                            <a asp-controller="Multas" asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                                            <a asp-controller="Multas" asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
                                         </td>
 
                                     </tr>
@@ -402,8 +454,37 @@
                         </table>
                     </div>
             </div>
-
-
+            <div class="tab-pane fade " id="notificaciones">
+                <div class="container mt-2">
+                    <h2>Notificaciones</h2>
+                    <p>
+                        <a asp-controller="Notificacion" asp-action="Create">Crear Notificaciones</a>
+                    </p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Mensaje</th>
+                                <th>Fecha de Solicitud</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var notificacion in Model.Notificaciones)
+                            {
+                                <tr>
+                                    <td>@notificacion.Mensaje</td>
+                                    <td>@notificacion.FechaSolicitud.ToString("dd/MM/yyyy")</td>
+                                    <td>
+                                        <a href="@Url.Action("Edit", "Notificacion", new { id = notificacion.Id })">Editar</a>
+                                        <a href="@Url.Action("Details", "Notificacion", new { id = notificacion.Id })">Detalles</a>
+                                        <a href="@Url.Action("Delete", "Notificacion", new { id = notificacion.Id })">Editar</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
         </div>
     </div>

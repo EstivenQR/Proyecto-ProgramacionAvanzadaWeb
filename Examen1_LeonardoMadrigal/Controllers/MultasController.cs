@@ -64,7 +64,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             {
                 _context.Add(multa);
                 await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Admin");
             }
             ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre", multa.EstadoId);
             ViewData["UsuarioId"] = new SelectList(_context.Usuario, "Id", "Username", multa.UsuarioId);
@@ -119,7 +119,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Admin");
             }
             ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre", multa.EstadoId);
             ViewData["UsuarioId"] = new SelectList(_context.Usuario, "Id", "Username", multa.UsuarioId);

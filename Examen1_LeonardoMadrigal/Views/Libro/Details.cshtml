@@ -9,7 +9,7 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Details</title>
+    <title>Detalles</title>
 </head>
 <body>
 
@@ -75,8 +75,8 @@
 </div>
 <div>
     <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-controller="Prestamo" asp-action="Create" asp-route-libroId="@Model?.Id" class="btn btn-primary">Pedir</a>
-    <a asp-action="Index">Back to List</a>
+    <a asp-controller="Prestamo" asp-action="Create" asp-route-libroId="@Model?.Id">Reservar</a>|
+    <a asp-controller="Admin" asp-action="Index">Volver</a>
 </div>
 </body>
 </html>

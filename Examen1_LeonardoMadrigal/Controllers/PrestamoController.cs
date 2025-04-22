@@ -130,7 +130,8 @@ namespace Examen1_LeonardoMadrigal.Controllers
             await _context.SaveChangesAsync();
 
             // 7. Redirigir a la acción de IndexUsuarioActual para mostrar los préstamos
-            return RedirectToAction(nameof(IndexUsuarioActual));
+            //return RedirectToAction(nameof(IndexUsuarioActual));
+            return RedirectToAction("Index", "Home");
         }
 
 
@@ -149,6 +150,12 @@ namespace Examen1_LeonardoMadrigal.Controllers
             }
             ViewData["LibroId"] = new SelectList(_context.Libro, "Id", "Autor", prestamo.LibroId);
             ViewData["UsuarioId"] = new SelectList(_context.Usuario, "Id", "Apellido", prestamo.UsuarioId);
+            // Se obtiene el usuario actual
+            //var userId = HttpContext.Session.GetString("usuario");  // Obtener el nombre de usuario desde la sesión
+            //if (string.IsNullOrEmpty(userId))  // Verificar si el usuario está autenticado
+            //{
+            //    return RedirectToAction("Login", "Usuario");  // Redirigir al login si no está autenticado
+            //}
             return View(prestamo);
         }
 
@@ -163,6 +170,18 @@ namespace Examen1_LeonardoMadrigal.Controllers
             {
                 return NotFound();
             }
+
+            if (!ModelState.IsValid)
+            {
+                foreach (var state in ModelState)
+                {
+                    foreach (var error in state.Value.Errors)
+                    {
+                        Console.WriteLine($"Campo: {state.Key} - Error: {error.ErrorMessage}");
+                    }
+                }
+            }
+
 
             if (ModelState.IsValid)
             {
@@ -251,7 +270,9 @@ namespace Examen1_LeonardoMadrigal.Controllers
             _context.SaveChanges();
 
             // Se redirecciona a la vista de detalles del préstamo
-            return RedirectToAction(nameof(Details), new { id = prestamo.Id });
+
+            return RedirectToAction("IndexUsuarioActual", "Devolucion");
+            //return RedirectToAction(nameof(IndexUsuarioActual), new { id = prestamo.Id });
         }
 
 
