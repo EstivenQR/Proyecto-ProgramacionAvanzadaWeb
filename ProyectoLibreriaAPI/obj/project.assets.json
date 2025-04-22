@@ -4461,19 +4461,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\estiv\\.nuget\\packages\\": {}
+    "C:\\Users\\leona\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj",
+      "projectUniqueName": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj",
       "projectName": "ProyectoLibreriaAPI",
-      "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj",
-      "packagesPath": "C:\\Users\\estiv\\.nuget\\packages\\",
-      "outputPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\obj\\",
+      "projectPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\ProyectoLibreriaAPI.csproj",
+      "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
+      "outputPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\estiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4488,8 +4488,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
-              "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj"
+            "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
+              "projectPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj"
             }
           }
         }

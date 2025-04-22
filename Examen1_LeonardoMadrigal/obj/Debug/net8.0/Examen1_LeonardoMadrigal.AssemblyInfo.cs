@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Examen1_LeonardoMadrigal")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6631d5a064c93b01a8fad4fe3623ccaeb58fddb7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+744a2ae4f63853e062da8f545f77b394bccc21c0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Examen1_LeonardoMadrigal")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Examen1_LeonardoMadrigal")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
