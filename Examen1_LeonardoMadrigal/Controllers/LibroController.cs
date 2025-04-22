@@ -238,7 +238,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             }
 
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("Index", "Admin");
         }
 
         private bool LibroExists(int id)
