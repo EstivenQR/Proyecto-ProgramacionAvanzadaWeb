@@ -128,6 +128,17 @@ namespace Examen1_LeonardoMadrigal.Controllers
             // 6. Agregar el préstamo al contexto y guardar los cambios
             _context.Add(prestamo);
             await _context.SaveChangesAsync();
+			var username = HttpContext.Session.GetString("usuario"); // Obtén el nombre del usuario desde la sesión
+
+			var notificacion = new Notificaciones
+            {
+                Mensaje = $"El libro '{libro.Titulo}' fue reservado por el usuario '{username}'.",
+				FechaSolicitud = DateTime.Now,
+                LibroId = libro.Id
+            };
+
+            _context.Notificaciones.Add(notificacion);
+            await _context.SaveChangesAsync();
 
             // 7. Redirigir a la acción de IndexUsuarioActual para mostrar los préstamos
             //return RedirectToAction(nameof(IndexUsuarioActual));

@@ -4,6 +4,7 @@ using Examen1_LeonardoMadrigal.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Examen1_LeonardoMadrigal.Migrations
 {
     [DbContext(typeof(ProyectoLibreriaContext))]
-    partial class ProyectoLibreriaContextModelSnapshot : ModelSnapshot
+    [Migration("20250422083549_CambiarRelacionNotificacionLibro")]
+    partial class CambiarRelacionNotificacionLibro
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

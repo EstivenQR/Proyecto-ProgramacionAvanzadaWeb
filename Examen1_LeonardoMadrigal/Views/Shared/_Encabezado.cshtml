@@ -2,6 +2,8 @@
 	var nombreUsuario = Context.Session.GetString("nombre");
 	var apellidoUsuario = Context.Session.GetString("apellido");
 	var rolUsuario = Context.Session.GetString("Rol");
+	    var cantidadNotificaciones = ViewBag.CantidadNotificaciones as int? ?? 0;
+
 
 }
 
@@ -30,6 +32,7 @@
 			</div>
 			<div class="col-md-6">
 				<div class="right-element">
+					
 					@if (!string.IsNullOrEmpty(nombreUsuario))
 					{
 						<p>Bienvenido, @nombreUsuario @apellidoUsuario </p>
@@ -39,16 +42,38 @@
 						<p>Bienvenido, invitado</p>
 					}
 
+
+					@if (string.IsNullOrEmpty(nombreUsuario))
+					{
 					<a asp-area="" asp-controller="Usuario" asp-action="Login" class="user-account for-buy">
 						<i class="icon icon-user"></i>
-						<span>Cuenta</span>
+						<span>Sing in</span>
 					</a>
-					<a href="#" class="cart for-buy">
-						<i class="icon icon-clipboard"></i><span>
-							Carrito:(0
-							$)
-						</span>
+					}
+					@if (!string.IsNullOrEmpty(nombreUsuario))
+					{	
+
+					<a asp-area="" asp-controller="Usuario" asp-action="Logout" class="user-account for-buy">
+						<i class="bi bi-box-arrow-in-left"></i>
+
+						<span>Logout</span>
 					</a>
+					}
+					@if (ViewContext.RouteData.Values["action"].ToString() == "Index")
+					{
+						@if (!string.IsNullOrEmpty(rolUsuario) && rolUsuario == "Administrador")
+						{
+							<a href="/Notificacion" style="margin-right:20px;">
+								<i class="bi bi-bell-fill" style="color:black;"></i>
+								@if (cantidadNotificaciones > 0)
+								{
+									<span class="badge bg-danger" style="position:absolute;  border-radius:50%; padding:4px 7px; font-size:12px;">
+										@cantidadNotificaciones
+									</span>
+								}
+							</a>
+						}
+					}
 
 					<div class="action-menu">
 
