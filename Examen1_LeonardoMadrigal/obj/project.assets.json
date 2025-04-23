@@ -7616,19 +7616,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\estiv\\.nuget\\packages\\": {}
+    "C:\\Users\\leona\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
+      "projectUniqueName": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
       "projectName": "Examen1_LeonardoMadrigal",
-      "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
-      "packagesPath": "C:\\Users\\estiv\\.nuget\\packages\\",
-      "outputPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\obj\\",
+      "projectPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\Examen1_LeonardoMadrigal.csproj",
+      "packagesPath": "C:\\Users\\leona\\.nuget\\packages\\",
+      "outputPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\Examen1_LeonardoMadrigal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\estiv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\leona\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -7643,8 +7643,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
-              "projectPath": "F:\\C# Universidad\\2025\\Proyecto\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj"
+            "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj": {
+              "projectPath": "D:\\Proyecto-ProgramacionAvanzadaWeb\\ProyectoLibreriaModels\\ProyectoLibreriaModels.csproj"
             }
           }
         }
