@@ -80,7 +80,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
         public IActionResult Create()
         {
             ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre");
-            ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id");
+            ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre");
             return View();
         }
 
@@ -92,7 +92,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             if (!ModelState.IsValid)
             {
                 ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
-                ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
+                ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre", libro.EstadoId);
                 return View(libro);
             }
 
@@ -129,7 +129,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
                 return NotFound();
             }
             ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
-            ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
+            ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre", libro.EstadoId);
 
             return View(libro);
         }
@@ -158,7 +158,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
 
                 // Recargar SelectLists
                 ViewData["CategoriaId"] = new SelectList(_context.Categoria, "Id", "Nombre", libro.CategoriaId);
-                ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Id", libro.EstadoId);
+                ViewData["EstadoId"] = new SelectList(_context.Estado, "Id", "Nombre", libro.EstadoId);
 
                 return View(libro);
             }
