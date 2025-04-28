@@ -9,10 +9,11 @@ using Examen1_LeonardoMadrigal.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Authentication;
 using System.Security.Claims;
+using Microsoft.AspNetCore.Identity;
 
 namespace Examen1_LeonardoMadrigal.Controllers
 {
-    [Authorize]
+
     public class UsuarioController : Controller
     {
         private readonly ProyectoLibreriaContext _context;
@@ -82,6 +83,9 @@ namespace Examen1_LeonardoMadrigal.Controllers
                 return View(usuario);
             }
 
+
+            var hasher = new PasswordHasher<Usuario>();
+            usuario.Password = hasher.HashPassword(usuario, usuario.Password);
             // Procesar la imagen si se sube un archivo
             if (imagenPerfil != null && imagenPerfil.Length > 0)
             {
@@ -196,41 +200,49 @@ namespace Examen1_LeonardoMadrigal.Controllers
         [HttpGet]
         public IActionResult Login()
         {
+
+
             return View();
         }
 
+
         [HttpPost]
-        public async Task<IActionResult> Login(string Usuario, string contraseña)
+        public async Task<IActionResult> Login(string Username, string password)
         {
-            Console.WriteLine($"Usuario: {Usuario}, Contraseña: {contraseña}");
-            bool loginExitoso = await _context.LoginUsuario(Usuario, contraseña);
+            var usuario = _context.Usuario.Include(u => u.Rol).FirstOrDefault(u => u.Username == Username);
 
-            if (loginExitoso)
+            if (usuario != null)
             {
-                var usuario = await _context.ObtenerUsuario(Usuario, contraseña);
-                if (usuario != null)
+                var hasher = new PasswordHasher<Usuario>();
+                var resultado = hasher.VerifyHashedPassword(usuario, usuario.Password, password);
+
+                if (resultado == PasswordVerificationResult.Success)
                 {
-                    var claims = new List<Claim>
-    {
-        new Claim(ClaimTypes.Name, usuario.Username),
-        new Claim(ClaimTypes.Role, usuario.RolId.ToString()) // Asegurar que el rol sea un string
-    };
+                    // Guardar en sesión si las credenciales son correctas
+                    HttpContext.Session.SetString("usuario", usuario.Username);
+					HttpContext.Session.SetString("nombre", usuario.Nombre);
+					HttpContext.Session.SetString("apellido", usuario.Apellido);
+					HttpContext.Session.SetString("Rol", usuario.Rol.Nombre);
 
-                    var claimsIdentity = new ClaimsIdentity(claims, "CookieAuth");
-                    var authProperties = new AuthenticationProperties
-                    {
-                        IsPersistent = true
-                    };
-
-                    await HttpContext.SignInAsync("CookieAuth", new ClaimsPrincipal(claimsIdentity), authProperties);
+                    // Depuración para verificar
+                    Console.WriteLine($"Usuario {usuario.Username} ha iniciado sesión correctamente.");
 
                     return RedirectToAction("Index", "Home");
                 }
+                else
+                {
+                    ViewBag.Error = "Credenciales inválidas";
+                }
+            }
+            else
+            {
+                ViewBag.Error = "Usuario no encontrado";
             }
 
-            ViewBag.Error = "Usuario o contraseña incorrectos";
             return View();
         }
+
+
 
 
         [HttpPost]
@@ -248,6 +260,7 @@ namespace Examen1_LeonardoMadrigal.Controllers
             usuario.RolId = 1;
             usuario.EstadoId = 1;
 
+
             // Procesar la imagen si se sube un archivo
             if (imagenPerfil != null && imagenPerfil.Length > 0)
             {
@@ -258,6 +271,8 @@ namespace Examen1_LeonardoMadrigal.Controllers
                 }
             }
 
+            var hasher = new PasswordHasher<Usuario>();
+            usuario.Password = hasher.HashPassword(usuario, usuario.Password);
             _context.Add(usuario);
             await _context.SaveChangesAsync();
             ViewBag.MensajeRegistro = "Registro exitoso, ahora puedes iniciar sesión.";

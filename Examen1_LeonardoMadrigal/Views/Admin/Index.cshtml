@@ -68,6 +68,9 @@
                                 <th>
                                     Libro
                                 </th>
+                            <th>
+                                Usuario
+                            </th>
                                 <th>
                                     Fecha de Inicio
                                 </th>
@@ -82,30 +85,48 @@
                                 </th>
                             </tr>
                         </thead>
-                        <tbody>
-                            @foreach (var prestamo in Model.Prestamos)
-                            {
-                                <tr>
-                                    <td>
-                                        @prestamo.Id
-                                    </td>
-                                    <td>
-                                        @prestamo.FechaInicio
-                                    </td>
-                                    <td>
-                                        @prestamo.FechaFin
-                                    </td>
-                                    <td>
-                                        @prestamo.EstaReservado
-                                    </td>
-                                    <td>
-                                        <a asp-controller="Prestamo" asp-action="Edit" asp-route-id="@prestamo.Id">Edit</a> |
-                                        <a asp-controller="Prestamo" asp-action="Details" asp-route-id="@prestamo.Id">Details</a> |
-                                        <a asp-controller="Prestamo" asp-action="Delete" asp-route-id="@prestamo.Id">Delete</a>
-                                    </td>
-                                </tr>
-                            }
-                        </tbody>
+                    <tbody>
+                        @foreach (var prestamo in Model.Prestamos)
+                        {
+                            var estaVencido = prestamo.FechaFin < DateTime.Now;
+                            var claseFila = estaVencido ? "table-danger" : "";
+
+                            <tr class="@claseFila">
+                                <td>
+                                    @prestamo.Id
+                                </td>
+                                <td>
+                                    @prestamo.Usuario.Username
+                                </td>
+                                <td>
+                                    @prestamo.FechaInicio.ToShortDateString()
+                                </td>
+                                <td>
+                                    @prestamo.FechaFin.ToShortDateString()
+                                    @if (estaVencido)
+                                    {
+                                        <span class="badge bg-danger ms-2">Caducado</span>
+                                    }
+                                </td>
+                                <td>
+                                    @prestamo.EstaReservado
+                                </td>
+                                <td>
+                                    <a asp-controller="Prestamo" asp-action="Edit" asp-route-id="@prestamo.Id">Edit</a> |
+                                    <a asp-controller="Prestamo" asp-action="Details" asp-route-id="@prestamo.Id">Details</a> |
+                                    <a asp-controller="Prestamo" asp-action="Delete" asp-route-id="@prestamo.Id">Delete</a> |
+
+                                    @if (estaVencido)
+                                    {
+                                            <a asp-controller="Multas" asp-action="Create" asp-route-id="@prestamo.Id">Aplicar Multa</a>
+                                 
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+
+
                     </table>
                 </div>
 
@@ -153,7 +174,7 @@
                                 @devolucion.Estado.Nombre
                             </td>
                             <td>
-                                @devolucion.Usuario.Username)
+                                @devolucion.Usuario.Username
                             </td>
                                     <td>
                                         <a asp-controller="Devolucion" asp-action="Edit" asp-route-id="@devolucion.Id">Edit</a> |
@@ -192,16 +213,14 @@
                             <th>
                                 Username
                             </th>
-                            <th>
-                                Password
-                            </th>
+     
                             <th>
                                 Rol
                             </th>
                             <th>
                                 Estado
                             </th>
-                            <th></th>
+                            <th>Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -233,9 +252,7 @@
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Username)
                                 </td>
-                                <td>
-                                    @Html.DisplayFor(modelItem => item.Password)
-                                </td>
+
                                 <td>
                                     @Html.DisplayFor(modelItem => item.Rol.Nombre)
                                 </td>
@@ -243,9 +260,9 @@
                                     @Html.DisplayFor(modelItem => item.Estado.Id)
                                 </td>
                                 <td>
-                                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                    <a asp-controller="Usuario" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                    <a asp-controller="Usuario" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                    <a asp-controller="Usuario" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                                 </td>
                             </tr>
                         }
@@ -254,25 +271,136 @@
             </div>
 
 
-            <div class="tab-pane fade show active" id="libros">
+            <div class="tab-pane fade" id="libros">
+                <div class="container mt-2">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th>Titulo</th>
+                                <th>Stock</th>
+                                <th>Autor</th>
+                                <th>Lanzamiento</th>
+                                <th>Editorial</th>
+                                <th>Sinopsis</th>
+                                <th>Precio</th>
+                                <th>Categoria</th>
+                                <th>Estado</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Libros)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.Titulo)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Stock)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Autor)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.FechaLanzamiento)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Editorial)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Sinopsis)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Precio)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Categoria.Nombre)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Estado.Id)</td>
+                                    <td>
+                                        <a asp-controller="Libro" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                        <a asp-controller="Libro" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                        <a asp-controller="Libro" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <div class="tab-pane fade show active" id="categorias">
+
+            <div class="tab-pane fade " id="categorias">
+                <div class="container mt-2">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.categorias)
+                            {
+                                <tr>
+                                    <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                                    <td>
+                                        <a asp-controller="Categoria" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                        <a asp-controller="Categoria" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                        <a asp-controller="Categoria" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
-            <div class="tab-pane fade show active" id="estados">
+            <div class="tab-pane fade" id="estados">
+            </div>
+            
+
+
+            <div class="tab-pane fade" id="roles">
+                <div class="container mt-2">
+                    <table class="table ">
+                        <thead>
+                            <tr>
+                                <th style="text-align:center">Nombre</th>
+                       
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.Roles)
+                            {
+                                <tr>
+                                    <td style="text-align: center">@Html.DisplayFor(modelItem => item.Nombre)</td>
+    
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+            </div>
             </div>
 
-            <div class="tab-pane fade show active" id="roles">
-            </div>
 
-            <div class="tab-pane fade show active" id="multas">
-            </div>
+            <div class="tab-pane fade " id="multas">
+                    <div class="container mt-2">
+                        <table class="table ">
+                            <thead>
+                                <tr>
+                                    <th style="text-align:center">Descripción</th>
+                                    <th style="text-align:center">Precio</th>
+                                    <th style="text-align:center">Usuario</th>
+                                    <th style="text-align:center">Estado</th>
+                                    <th style="text-align:center">Actions</th>
 
-            <div class="tab-pane fade show active" id="pedidos">
-            </div>
 
-            <div class="tab-pane fade show active" id="notificaciones">
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model.Multas)
+                                {
+                                    <tr>
+                                    <td style="text-align:center">@Html.DisplayFor(modelItem => item.Descripcion)</td>
+                                    <td style="text-align:center">@Html.DisplayFor(modelItem => item.PrecioMulta)</td>
+                                    <td style ="text-align:center">@Html.DisplayFor(modelItem => item.Usuario.Nombre)</td>
+                                    <td style="text-align:center">@Html.DisplayFor(modelItem => item.Estado.Nombre)</td>
+                                        <td>
+                                            <a asp-controller="Multas" asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                                            <a asp-controller="Multas" asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                                            <a asp-controller="Multas" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                                        </td>
+
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
             </div>
 
 
